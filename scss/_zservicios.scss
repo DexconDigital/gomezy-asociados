@@ -1,0 +1,40 @@
+#servicios{
+
+    .fas{
+            font-size: 50px;
+            color: $azul_oscuro;
+        }
+        .espacio_top{
+            margin-top: 3%;
+        }
+        .borde{
+            border: 1px solid #80828552 !important;
+
+        }
+        h2{
+            font-weight: bold;
+        }
+    
+}
+#consignar{
+    .color_btn{
+        background-color: white;
+        color: $azul_claro;
+
+        &:hover{
+            background-color: $gris;
+            color: white;
+        }
+    }
+    .color_fondo{
+        background-color: $azul_claro;
+    }
+    .color_texto{
+        color: white;
+    }
+    .margen_boton{
+        margin-top: 7px;
+        margin-bottom: 4px;
+    }
+    
+}

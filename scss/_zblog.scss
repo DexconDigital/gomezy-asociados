@@ -1,0 +1,18 @@
+#blog{
+    
+  margin-bottom: 5%;
+    .color_titulo{
+        color: $azul_claro;
+    }
+    .boton_ver_mas{
+        background-color: $azul_oscuro;
+        color:white;
+    }
+    .card{
+        transition: all .5s ease-out;
+        &:hover{
+          transform: scale(1.1);
+          transition: all .5s ease-out;
+        }
+    }
+}

@@ -1,0 +1,487 @@
+@font-face{
+    font-family: "corbel";
+    src: url("../webfonts/corbel.ttf");
+} 
+
+@font-face{
+    font-family: "helveticaNeue";
+    src: url("../webfonts/HelveticaNeue.otf");
+} 
+
+body  {
+    font-family: "corbel";
+}
+p {
+    font-family: "corbel";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+button, input, select, option, a, li,span {
+    font-family: "helveticaNeue";
+    font-size: 18px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "helveticaNeue";
+}
+
+.my_100 {
+    margin: 100px 0;
+}
+
+.margin_top_first_section {
+    margin-top: 160px;
+}
+
+#banner {
+    margin-top: 168px;
+
+    .position-absolute {
+        z-index:2;
+    }
+
+    img {
+        filter: brightness(0.5);
+    }
+}
+
+.color_boton {
+    
+    background-color: $azul_claro;
+    color: white;
+
+
+    &:hover {
+
+        color: white;
+        background-color: $azul_oscuro;
+    }
+}
+
+header {
+
+    .header_iconos {
+
+        i{
+            color: white;
+        }
+            
+        .hover_iconos {
+
+            cursor: pointer;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+
+               
+                background-color: white;
+
+                i {
+                    color: $azul_claro;      
+                }
+                
+            }
+        }
+
+        .telefonos_header {
+            
+            a {
+                text-decoration: none;
+                color: white;
+                transition: all 100ms ease-in-out;
+
+
+                &:hover {
+
+                    color: #ffffffb5;
+
+                    i {
+                        color: #ffffffb5;      
+                    }
+
+                }
+
+            }
+
+        }
+
+        
+        .container-fluid {
+            width: 100vw;
+            height: 50px;
+            background-color: $azul_claro;
+        }
+    
+    }
+
+    .header_nav {
+
+        .dropdown-item {
+
+            color: black!important;
+
+            &:hover {
+                background-color: $azul_claro;
+            }
+        }
+
+       
+
+        background-color: #00000078;
+
+        
+        .container {
+
+            
+
+            width: 100%;
+    
+            nav {
+                
+              
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover { 
+                        color: $azul_claro;
+                    }
+
+                }
+    
+                li {
+    
+                    transition: all 250ms ease-in-out;
+
+                    h5 {
+                        
+
+                    }
+
+    
+                    &:hover {
+
+                        
+                    h5 {
+                        color: $azul_claro;
+                    }
+
+                        background-color: white;
+                    }
+                }
+            }
+            
+    
+            .img_logo {
+                width: 150px;
+                height: 100px;
+            }
+    
+            .img_pse {
+
+                width: 55px;
+                height: 50px;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+    
+        }
+
+    }
+    .header_nav2 {
+
+        .dropdown-item {
+
+            color: black!important;
+
+            &:hover {
+                background-color: $azul_claro;
+            }
+        }
+
+       
+
+        background-color: white;
+
+        
+        .container {
+
+            
+
+            width: 100%;
+    
+            nav {
+                
+              
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover { 
+                        color: $azul_claro;
+                    }
+
+                }
+    
+                li {
+    
+                    transition: all 250ms ease-in-out;
+
+                    h5 {
+                        
+
+                    }
+
+    
+                    &:hover {
+
+                        
+                    h5 {
+                        color: $azul_claro;
+                    }
+
+                        background-color: white;
+                    }
+                }
+            }
+            
+    
+            .img_logo {
+                width: 150px;
+                height: 100px;
+            }
+    
+            .img_pse {
+
+                width: 55px;
+                height: 50px;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+    
+        }
+
+    }
+
+       
+}
+
+#carrusel_imagenes_principales {
+    margin-top: 50px;
+}
+
+.btn {
+    font-size: 18px!important;
+}
+
+#buscador {
+
+    .form-control {
+        font-size: 18px;
+    }
+
+    
+}
+
+#propiedades_destacadas {
+
+    span {
+        color: $azul_claro;
+    }
+
+    i {
+        color: $azul_claro;
+    }
+
+    .card {
+        
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+    }
+
+    .boton_precio {
+        color: black;
+        font-size: 18px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border: 0;
+        border-radius: .125rem;
+        cursor: pointer;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .boton_detalles {
+        background-color: $gris;
+        color: white;
+        font-size: 18px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border: 0;
+        border-radius: .125rem;
+        cursor: pointer;
+        white-space: normal;
+        word-wrap: break-word;
+
+        &:hover {
+            background-color: $azul_oscuro;
+        }  
+
+    }
+
+}
+
+#contenido_pagina_principal {
+
+    background-color: #EBEBEC;
+
+    
+    
+    #descripcion_nosotros {
+
+        
+        i {
+            transition: all 200ms ease-out;
+            color: $azul_claro;
+            font-size: 40px;
+
+            &:hover {
+                color: $azul_oscuro;
+                transform: scale(1.1);
+            }
+        }
+    
+        img {
+            width: 100%;
+            height: 397px;
+        }
+
+
+
+    }
+
+    #nuestros_servicios {
+
+        
+        background-color: white;
+        
+     
+
+        i {
+            
+            color: white;
+            font-size: 50px;
+
+        }
+
+        .panal {
+
+            h5 {
+                color: white;
+                font-size: 13px;
+
+            }
+
+            transition: all 250ms ease-in-out;
+            width: 196px;
+            height: 160px;
+            background-image: url(../images/hexagono.png);
+            background-position: center center;
+            background-size: cover;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover {
+
+                transform: scale(1.1);
+               
+            }
+        }
+
+    }
+
+    #aliados {
+        
+    }
+
+}
+
+footer {
+
+    .matriculas {
+        font-size: 15px;
+    }
+
+    background-color: #4C555A;
+    color: white;
+
+    .color_boton_footer {
+
+        color: white;
+        background-color: gray;
+
+        &:hover {
+
+            color: white;
+            background-color: $azul_oscuro;
+        }
+
+    }
+
+    .borde {
+
+        border-top: 1px solid gray;
+
+        a {
+            text-decoration: none;
+            color: $azul_claro;
+
+            &:hover {
+                color: $azul_oscuro;
+            }
+        }
+
+    }
+}
+.subir {
+    display: none;
+    padding: 15px;
+    background-color: $azul_claro;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 47px;
+    right: 20px;
+    box-shadow: -1px 1px 5px 1px $gris;
+    z-index: 2; }
+    .color_enviar{
+        background-color: $gris;
+        color: white;
+
+        &:hover{
+            background-color: $azul_oscuro;
+            color: white;
+        }
+}
+.color_titulo{
+    color: #0089CF;
+}
+.boton_ver_mas{
+    background-color: $azul_oscuro;
+    color:white;
+}

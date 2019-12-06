@@ -1,0 +1,83 @@
+#mapa{
+    margin-top: 3%;
+}
+
+#formulario{
+    .color_boton_contacto{
+        background-color: $azul_oscuro;
+        color: white;
+
+        &:hover{
+            background-color: $gris;
+            color: white;
+        }
+    }
+    .color_a_contacto{
+        color: $azul_claro;
+
+        &:hover{
+            color: $azul_oscuro;
+        }
+    }
+    li{
+        list-style: none;
+    }
+    .color_a_datos{
+        color: black;
+        &:hover{
+            color: $azul_claro;
+        }
+    }
+    i{
+        color: $azul_oscuro;
+
+        &:hover{
+            color: $azul_claro;
+        }
+    }
+    h2{
+        font-weight: bold;
+    }
+    .texto_contacto{
+        font-family: "helveticaNeue";
+    color: black;
+
+    &:hover{
+        color: $azul_oscuro;
+    }
+    
+    }
+    .icono_cartera{
+        width: 27%;
+        margin-top: -182%;
+    }
+.icono_mercadeo{
+    width: 36%;
+    margin-top: -233%;
+}
+.icono_pagos{
+    width: 41%;
+    margin-top: -175%;
+}
+.icono_proteccion{
+    width: 36%;
+    margin-top: -231%;
+}
+
+.icono_restituciones{
+    width: 32%;
+    margin-top: -183%;
+}
+.icono_publicos{
+    width: 33%;
+    margin-top: -233%;
+}
+.icono_mtto{
+    width: 31%;
+    margin-top: -181%;
+}
+.icono_financiero{
+    width: 37%;
+    margin-top: -181%;
+}
+}

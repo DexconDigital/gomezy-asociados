@@ -1,0 +1,31 @@
+// stylelint-disable declaration-no-important
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+@if $enable-gradients {
+  @each $color, $value in $theme-colors {
+    @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+  }
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-transparent {
+  .dropdown-item {
+
+    color: black!important;
+
+    &:hover {
+        background-color: $azul_claro;
+    }
+}
+
+
+
+background-color: #00000078;
+  
+}

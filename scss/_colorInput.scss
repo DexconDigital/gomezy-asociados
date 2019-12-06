@@ -1,0 +1,6 @@
+textarea:focus, textarea[type]:focus, input:focus, input[type]:focus{
+    border-color: $azul_claro;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px $azul_claro !important;
+    outline: 0 none;
+}
+
