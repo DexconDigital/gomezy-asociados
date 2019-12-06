@@ -29,7 +29,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
                 <h1 class="font-weight-bold"> INMUEBLES </h1>
-                <h5>  Inicio / Inmuebles  </h5>
+                <h5 class="justify-content-center row">  Inicio / Inmuebles  </h5>
             </div>
             <div>
                 <img src="images/banner_inmuebles.png" alt="">
@@ -80,7 +80,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>

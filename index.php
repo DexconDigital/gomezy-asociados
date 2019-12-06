@@ -104,7 +104,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     </div>
                                     <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
                                         <p> <span>$</span>100.000.000 </p>
-                                        <a href="#" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                                     </div>
                                 </div>
                             </div>
