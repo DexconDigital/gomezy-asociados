@@ -6,7 +6,21 @@
 
             <div class="col-3">
 
-                <h5> Formulario Aseguradoras </h5>
+                <h5 class="text-center"> Formulario Aseguradoras </h5>
+
+                <ul>
+                    <li> <a href="Persona_Natural_Berkley.pdf" download="Persona_Natural_Berkley.pdf"> Persona Natural Berkley </a> </li>
+                    <li> <a href="Persona_Juridica_Berkley.pdf" download="Persona_Juridica_Berkley.pdf"> Persona Juridica Berkley </a> </li>
+
+                    <li> <a href="Persona_natural_El_Libertador.pdf" download="Persona_natural_El_Libertador.pdf"> Persona natural El Libertador </a> </li>
+                    <li> <a href="Persona_Juridica_El_Libertador.pdf" download="Persona_Juridica_El_Libertador.pdf"> Persona Juridica El Libertador </a> </li>
+
+                    <li> <a href="Persona_Natural_FGI.pdf" download="Persona_Natural_FGI.pdf"> Persona Natural FGI </a> </li>
+                    <li> <a href="Persona_Juridica_FGI.pdf" download="Persona_Juridica_FGI.pdf"> Persona Juridica FGI </a> </li>
+
+                    <li> <a href="Persona_Natural_Unifianza.pdf" download="Persona_Natural_Unifianza.pdf"> Persona Natural Unifianza </a> </li>
+                    <li> <a href="Persona_Juridica_Unifianza.pdf" download="Persona_Juridica_Unifianza.pdf"> Persona Juridica Unifianza </a> </li>
+                </ul>
 
 
             </div>

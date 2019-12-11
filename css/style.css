@@ -7805,6 +7805,11 @@ header .header_nav2 {
 footer {
   background-color: #4C555A;
   color: white; }
+  footer ul a {
+    text-decoration: none;
+    color: white; }
+    footer ul a:hover {
+      color: #0089CF; }
   footer .matriculas {
     font-size: 15px; }
   footer .color_boton_footer {

@@ -209,6 +209,7 @@ $imagenes = [
 
 //iconos servicios
 $iconos_servicios = [
+	"mantenimiento" => "fas fa-tools",
 	"arrendamientos" => "fas fa-sign",
 	"ventas" => "fas fa-tags",
 	"avaluos" => "fas fa-balance-scale",
@@ -219,6 +220,11 @@ $iconos_servicios = [
 	
 //textos servicios
 $texto_servicios = [
+	"mantenimientos" => [
+		"titulo" => "Mantenimiento",
+		"parrafo" => "Servicio de mantenimientos en inmuebles en promoción y administración, contamos con contratistas especializados y trabajos garantizados."
+	],
+
 	"arrendamientos" => [
 		"titulo" => "Arrendamientos",
 		"parrafo" => "Realizamos una excelente gestión para arrendar su propiedad: Apartamentos, casas, locales, bodegas, terrenos, apartamentos amoblados, fincas, con cobertura en todo el valle del aburra, promocionamos los inmuebles en nuestra página web corporativa y en los portales inmobiliarios más efectivos del país.",

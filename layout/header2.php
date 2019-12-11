@@ -80,9 +80,6 @@
                     <a target="_blank" href="<?php echo $redes_sociales['instagram']['link'] ?>">
                         <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['instagram']['icono'] ?>"></i> </div>
                     </a>
-                    <a target="_blank" href="<?php echo $redes_sociales['twitter']['link'] ?>">
-                        <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['twitter']['icono'] ?>"></i> </div>
-                    </a>
                     <a target="_blank" href="<?php echo $redes_sociales['youtube']['link'] ?>">
                         <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
                     </a>

@@ -27,8 +27,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
     <section id="banner" class="position-relative">
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
-                <h1 class="font-weight-bold" > SERVICIOS </h1>
-                  <h5 class="justify-content-center row"> Inicio / Servicios  </h5>
+                <h1 class="font-weight-bold"> SERVICIOS </h1>
+                <h5 class="justify-content-center row"> Inicio / Servicios </h5>
             </div>
             <div>
                 <img src="images/banner_servicios.png" alt="">
@@ -84,6 +84,22 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
                 </div>
+
+                <!-- Matenimiento -->
+                <div class="col-12 borde mt-3">
+                    <div class="row">
+                        <div class="col-6 p-3">
+                            <h2 class="text-center"><?php echo $texto_servicios['mantenimientos']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3   text-center">
+                                <samp><i class="<?php echo $iconos_servicios['mantenimiento'] ?>"></i></samp>
+                            </div>
+                        </div>
+                        <div class="col-6 p-4">
+                            <p class="text-justify"><?php echo   $texto_servicios['mantenimientos']['parrafo']  ?> </p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Asesorias -->
                 <div class="col-12 borde  mt-3">
                     <div class="row">
@@ -126,9 +142,12 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 <samp><i class="<?php echo $iconos_servicios['inversiones'] ?>"></i></samp>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="mb-3 col-12">
                             <p class="text-justify"><?php echo   $texto_servicios['inversiones']['parrafos'][1]  ?> </p>
-                            <p class="text-justify"><?php echo   $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
+                            <div class="row">
+                                <div class="col-6"><img class="w-100" src="images/gomez_y_loaiza.png" alt=""></div>
+                                <p class="text-justify col-6"><?php echo   $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +187,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <?php include 'layout/footer.php' ?>
 
     </footer>
-    
+
 
 </body>
 <?php include 'layout/archivosfooter.php'; ?>
