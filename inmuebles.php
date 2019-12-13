@@ -1,4 +1,6 @@
-<?php require 'variables/variables.php';
+<?php
+require 'variables/variables.php';
+require 'controllers/inmueblesController.php';
 $page = 'Inmuebles';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -29,7 +31,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
                 <h1 class="font-weight-bold"> INMUEBLES </h1>
-                <h5 class="justify-content-center row">  Inicio / Inmuebles  </h5>
+                <h5 class="justify-content-center row"> Inicio / Inmuebles </h5>
             </div>
             <div>
                 <img src="images/banner_inmuebles.png" alt="">
@@ -47,228 +49,61 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
 
 
-            <div class="container p-0">
+        <div class="container p-0">
+            <div class="col-12">
+                <div class="row">
 
-                <div class="col-12">
+                    <!-- propiedades -->
+                    <?php
+                    if (is_array($api)) {
+                        listar_inmuebles($api['Inmuebles']);
+                    } else {
+                        echo '<div class="col-12">
+                        <h2 class="text-center" >No se encontraron inmuebles</h2>
+                    </div>';
+                    }
+                    ?>
 
-                    <div class="row">
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-4 px-3">
-                            <div class="card">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="px-3 card-title"> Nombre de Inmueble </h5>
-                                    <div>
-                                        <ul class="justify-content-around list-group list-group-horizontal">
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                                <p>Mts</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
-                                                <p>2</p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bed"></i>
-                                                <p>4 </p>
-                                            </li>
-
-                                            <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-warehouse"></i>
-                                                <p> 2</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
-                                        <p> <span>$</span>100.000.000 </p>
-                                        <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
 
                 </div>
-
             </div>
+        </div>
+        
+        <div class="col-12 text-center">
+            <?php if (is_array($api)) : ?>
+                <ul class="pagination mt-4 align-items-end justify-content-center">
+                    <?php if ($paginator->getPrevUrl()) : ?>
+                        <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo; Atras</a></li>
+                    <?php endif; ?>
+                    <?php foreach ($paginator->getPages() as $page) : ?>
+                        <?php if ($page['url']) : ?>
+                            <li <?php echo $page['isCurrent'] ? 'class="page-item active"' : ''; ?>>
+                                <a href="<?php echo $page['url']; ?>" class="page-link"><?php echo $page['num']; ?></a>
+                            </li>
+                        <?php else : ?>
+                            <li class="page-item disabled"><span><?php echo $page['num']; ?></span></li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
 
-        </section>
+                    <?php if ($paginator->getNextUrl()) : ?>
+                        <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link">Siguiente &raquo;</a></li>
+                    <?php endif; ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+
+    </section>
 
     <section>
-        
 
-    <footer>
 
-        <?php include 'layout/footer.php' ?>
+        <footer>
 
-    </footer>
+            <?php include 'layout/footer.php' ?>
 
-    <?php include 'layout/archivosfooter.php'; ?>
+        </footer>
+
+        <?php include 'layout/archivosfooter.php'; ?>
 </body>
 
 </html>

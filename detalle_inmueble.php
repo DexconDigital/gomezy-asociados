@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/detalleInmuebleController.php';
 $page = 'Inmuebles';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -10,6 +11,12 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/archivosheader.php'; ?>
+    <link rel="stylesheet" href="css/carousel.inmuebles.css">
+    <link rel="stylesheet" href="css/carousel.tamanos.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria; ?></title>
 </head>
 
@@ -56,13 +63,42 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <section id="seccion_izquierda" class="col-8">
 
                     <!-- Inicio carrusel de imagenes -->
-                    <section id="carrusel" class="my-3">
 
-                        <h2 class="text-center"> *Carrusel imagenes* </h2>
-                        <img class="w-100" src="images/custom1.jpg" alt="">
-
-
-                    </section>
+                    <div class="container">
+                        <div class="col-12">
+                            <!-- main slider carousel items -->
+                            <section class="mt-3" id="slide-detalle">
+                                <?php
+                                if (isset($r['fotos'])) {
+                                    for ($i = 0; $i < count($r['fotos']); $i++) {
+                                        echo '<div class="contenedor-img">
+                                        <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
+                                    </div>';
+                                    }
+                                } else {
+                                    echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                                }
+                                ?>
+                            </section>
+                            <section class="vertical-center-4 slider" id="miniaturas">
+                                <?php
+                                if (isset($r['fotos'])) {
+                                    for ($i = 0; $i < count($r['fotos']); $i++) {
+                                        echo '<div class="contenedor-img">
+                                        <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
+                                    </div>';
+                                    }
+                                } else {
+                                    echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                                }
+                                ?>
+                            </section>
+                        </div>
+                    </div>
                     <!-- Fin carrusel de imagenes -->
 
                     <section id="descripcion_inmueble" class="mt-3">
@@ -74,33 +110,33 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                                 <div class="col-6">
 
-                                    <h3> Nombre de Inmueble </h3>
+                                    <h3> <?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?> </h3>
 
                                     <div class="container">
                                         <div class="row align-items-baseline">
 
                                             <div>
                                                 <i class="fas fa-chart-area"></i>
-                                                <p class="d-inline">100m²</p>
+                                                <p class="d-inline"><?php echo $area_construida; ?>m<sup>2<sup></p>
                                             </div>
 
                                             <div>
                                                 <i class="ml-3 fas fa-bed"></i>
-                                                <p class="d-inline">4</p>
+                                                <p class="d-inline"><?php echo $alcobas; ?></p>
                                             </div>
 
                                             <div>
                                                 <i class="ml-3 fas fa-bath"></i>
-                                                <p class="d-inline">2</p>
+                                                <p class="d-inline"><?php echo $banios; ?></p>
                                             </div>
 
                                             <div>
                                                 <i class="ml-3 fas fa-warehouse"></i>
-                                                <p class="d-inline">1</p>
+                                                <p class="d-inline"><?php echo $garaje; ?></p>
                                             </div>
 
                                             <div>
-                                                <p class="ml-3 text-muted"> Código </p>
+                                                <p class="ml-3 text-muted"> Código: <?php echo $co; ?> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -182,34 +218,86 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <div id="uno" class="collapse show" aria-labelledby="uno" data-parent="#accordion">
 
                                             <h2> Descripción </h2>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit tempore soluta? Voluptatum veritatis accusamus alias obcaecati deleniti, culpa expedita laudantium odio. Dolore repudiandae assumenda, quod ab nulla et mollitia. </p>
+                                            <p style="text-align: justify;"><?php echo $descripcion ?></p>
                                         </div>
 
                                         <div id="dos" class="collapse" aria-labelledby="dos" data-parent="#accordion">
 
-                                            <h2> Características Internas </h2>
-                                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                            <?php
+                                            if (count($r['caracteristicasInternas']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
+                                                      <h2 class="property-single-detail-title"><strong>Características Internas</strong></h2>
+                                                        <ul>';
+                                                for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
+                                                 </div>
+                                                         ';
+                                            }
+                                            ?>
 
                                         </div>
 
                                         <div id="tres" class="collapse" aria-labelledby="tres" data-parent="#accordion">
 
-                                            <h2> Características Externas </h2>
-                                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                            <?php
+                                            if (count($r['caracteristicasExternas']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
+                                                        <h2 class="property-single-detail-title"><strong>Características Externas</strong></h2>
+                                                              <ul>';
+                                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
+                                                             </div>
+                                                                     ';
+                                            }
+                                            ?>
 
                                         </div>
 
                                         <div id="cuatro" class="collapse" aria-labelledby="cuatro" data-parent="#accordion">
 
-                                            <h2> Características Alrededores </h2>
-                                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                            <?php
+                                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
+                                                      <h2 class="property-single-detail-title"><strong>Características de los alrededores</strong></h2>
+                                                                  <ul>';
+                                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
+                                                       </div>
+                                                                  ';
+                                            }
+                                            ?>
 
                                         </div>
 
                                         <div id="cinco" class="collapse" aria-labelledby="cinco" data-parent="#accordion">
 
-                                            <h2> Video </h2>
-                                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                            <?php if ($r['video'] != "") {
+                                                echo
+                                                    ' <h2 class="property-single-detail-title">Video</h2>
+                                                            <div class="card">
+                                                              <div class="card-body">
+                                                                  <h5 class="card-title">Video</h5>
+                                                                 <div class="row">
+                                                        <div class="col-12 col-md-4">
+                                                            <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                          </div>
+                                                          </div>
+                                                         </div>
+                                                         </div>
+                                                       ';
+                                            } ?>
 
                                         </div>
 
@@ -241,11 +329,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                     <div class="">
                         <h2 class="my-3 text-center"> Contacto con el asesor </h2>
 
-                        <div class="imagen_asesor row justify-content-center"> <img src="images/no_image.png" alt=""> </div>
-
-                        <p class="mt-3 col-12"> NOMBRE </p>
-                        <p class="col-12"> TELEFONO </p>
-                        <p class="col-12"> CORREO </p>
+                        <div class="imagen_asesor row justify-content-center"> <img src="<?php echo $asesor['FotoAsesor']; ?>" alt=""> </div>
+                        <p class="mt-3 col-12"><i class="fas fa-user mr-2"><span> <?php echo $asesor['ntercero']; ?></span></i></p>
+                        <p class="col-12"><i class="fas fa-mobile-alt mr-2"><span><a class="color_asesor" href="tel:+57<?php echo $asesor['celular']; ?>"> <?php echo $asesor['celular']; ?></a></span></i></p>
+                        <p class="col-12"><i class="fas fa-envelope mr-2"></i><span><a class="color_asesor" href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></span></p>
                     </div>
                     <!--Fin contacto con el asesor -->
 
@@ -254,32 +341,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                         <h5 class="mb-3 text-center"> Propiedades similares </h5>
 
-                        <div class="mb-3 col-12 border-top border-bottom">
-                            <a href="#" class="row align-items-center">
-                                <div class="col-6">
-                                    <img style="width:100%;" src="images/no_image.png" alt="">
-                                </div>
-                                <div class="col-6"> *Descripción del apartamento* </div>
-                            </a>
-                        </div>
+                        <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
 
-                        <div class="mb-3 col-12 border-top border-bottom">
-                            <a href="#" class="row align-items-center">
-                                <div class="col-6">
-                                    <img style="width:100%;" src="images/no_image.png" alt="">
-                                </div>
-                                <div class="col-6"> *Descripción del apartamento* </div>
-                            </a>
-                        </div>
-
-                        <div class="mb-3 col-12 border-top border-bottom">
-                            <a href="#" class="row align-items-center">
-                                <div class="col-6">
-                                    <img style="width:100%;" src="images/no_image.png" alt="">
-                                </div>
-                                <div class="col-6"> *Descripción del apartamento* </div>
-                            </a>
-                        </div>
 
                     </div>
                     <!-- Fin Propiedades similares -->
@@ -300,17 +363,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
     <footer>
 
         <?php include 'layout/footer.php' ?>
@@ -319,6 +371,49 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
 
     <?php include 'layout/archivosfooter.php'; ?>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('#slide-detalle').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '#miniaturas'
+        });
+        $('#miniaturas').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '#slide-detalle',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            variableWidth: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                }
+            ]
+        });
+    </script>
 
 </body>
 

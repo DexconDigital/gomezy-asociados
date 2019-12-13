@@ -497,3 +497,11 @@ footer {
     background-color: $azul_oscuro;
     color:white;
 }
+
+.lista_simislares{
+    list-style: none;
+    display: flex;
+    .fas{
+        color: $azul_claro;
+    }
+}
