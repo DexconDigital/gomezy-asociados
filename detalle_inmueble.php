@@ -44,16 +44,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         </div>
     </section>
 
-    <!-- ----------BUSCADOR---------- -->
-
-    <section id="buscador" class="my-5">
-
-        <?php include 'layout/buscador.php' ?>
-
-    </section>
-
-    <!-- ----------BUSCADOR---------- -->
-
     <section id="contenido_detalle_inmueble">
 
         <div class="container">

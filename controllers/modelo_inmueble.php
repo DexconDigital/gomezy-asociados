@@ -11,14 +11,14 @@ function modelo_inmueble($r, $cantidad_inmuebles)
         echo '
         
             <div class="mb-5 col-4 px-3">
-                  <div class="card">
+                  <div class="card card-max-height">
                       <img src="' . $imagen . '" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
                           <div>
                               <ul class="justify-content-around list-group list-group-horizontal">
                                   <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                                      <p> ' . $api['AreaConstruida'] . '</p>
+                                      <p> ' . $api['AreaConstruida'] . 'm<sup>2 </p>
                                   </li>
 
                                   <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
@@ -33,6 +33,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                                       <p>' . $api['garaje'] . '</p>
                                   </li>
                               </ul>
+                              <p class="ml-3 text-muted"> Código : '. $codigo .' </p>
 
                           </div>
                           <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
@@ -73,7 +74,7 @@ function modelo_inmueble_todos($r)
         // fin de recortar cadena
         echo '
         <div class="mb-5 col-4 px-3">
-            <div class="card">
+            <div class="card card-max-height">
                 <img src="' . $imagen . '" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
@@ -95,6 +96,7 @@ function modelo_inmueble_todos($r)
                             <p>' . $api['garaje'] . '</p>
                         </li>
                     </ul>
+                    <p class="ml-3 text-muted"> Código : '. $codigo .' </p>
 
                 </div>
                 <div class="align-items-baseline p-0 m-0 border-top row justify-content-around col-12">
@@ -155,6 +157,8 @@ function modelo_inmueble_similare($r)
 
                                     </li>
                                 </ul>
+                                <p class="ml-3 text-muted"> Código : '. $codigo .' </p>
+                                
                             </div>
                         </div>
 ';
