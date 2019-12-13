@@ -45,7 +45,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                                   echo '' . $api['Venta'];
                               }
                               echo ' </p>
-                              <a href="detalle_inmueble.php" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
+                              <a href="detalle_inmueble.php?co=' . $codigo . '" class="text-capitalize mt-4 rounded btn boton_detalles"> Detalles </a>
                           </div>
                       </div>
                   </div>
