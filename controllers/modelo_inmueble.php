@@ -15,6 +15,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                       <img src="' . $imagen . '" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
+                          <li class="align-items-baseline d-flex m-0 ml-3"> <i class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
                           <div>
                               <ul class="justify-content-around list-group list-group-horizontal">
                                   <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
@@ -78,10 +79,11 @@ function modelo_inmueble_todos($r)
                 <img src="' . $imagen . '" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
+                <li class="align-items-baseline d-flex m-0 ml-3"> <i class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
                 <div>
                     <ul class="justify-content-around list-group list-group-horizontal">
                         <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-chart-area"></i>
-                            <p> ' . $api['AreaConstruida'] . '</p>
+                            <p> ' . $api['AreaConstruida'] . ' m<sup>2</p>
                         </li>
 
                         <li class="align-items-baseline border-white d-flex list-group-item p-0 px-2"><i class="mr-2 fas fa-bath"></i>
@@ -129,11 +131,14 @@ function modelo_inmueble_similare($r)
 
     echo ' 
             <div class="mb-3 col-12 border-top border-bottom">
+            <h5 class="text-center py-3 px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
                             <a href="detalle_inmueble.php?co=' . $codigo . '" class="row align-items-center">
+                            
                                 <div class="col-12 mb-3">
                                     <img style="width:100%;" src="'. $imagen . '" alt="">
                                 </div>
                             </a>
+                            <li class="justify-content-center align-items-baseline d-flex m-0 ml-3"> <i style="color:#0089CF;" class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
                             <div class="col-12 text-center">
 
                                 <ul class="lista_simislares">

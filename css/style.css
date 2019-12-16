@@ -7744,6 +7744,9 @@ header .header_nav2 {
 
 #propiedades_destacadas span {
   color: #0089CF; }
+#propiedades_destacadas .direccion {
+  color: #0089CF;
+  font-size: 15px; }
 #propiedades_destacadas i {
   color: #0089CF; }
 #propiedades_destacadas .card {
@@ -8060,7 +8063,7 @@ footer {
 #contenido_detalle_inmueble #seccion_izquierda i {
   color: #0089CF; }
 #contenido_detalle_inmueble #seccion_izquierda .botones {
-  font-size: 13px;
+  font-size: 15px;
   border: none;
   padding: 11px;
   background-color: #09428E; }
@@ -8072,6 +8075,8 @@ footer {
     color: #808285; }
 #contenido_detalle_inmueble #seccion_derecha .imagen_asesor img {
   width: 70%; }
+#contenido_detalle_inmueble #seccion_derecha #contacto_asesor p a {
+  font-weight: 400; }
 #contenido_detalle_inmueble #seccion_derecha #propiedades_similares a {
   color: inherit;
   text-decoration: none;

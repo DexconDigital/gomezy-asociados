@@ -8,7 +8,7 @@
         }
     
       .botones {
-        font-size: 13px;
+        font-size: 15px;
         border: none;
         padding: 11px;
         background-color: $azul_oscuro;
@@ -42,6 +42,14 @@
                 width: 70%;
             }
     
+        }
+
+        #contacto_asesor {
+            p {
+                a{
+                    font-weight: 400;
+                }
+            }
         }
 
         #propiedades_similares {
