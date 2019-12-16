@@ -43,6 +43,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
     </style>
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria; ?></title>
+    <link itemprop="thumbnailUrl" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    </span>
 </head>
 
 
@@ -61,7 +65,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
                 <h1 class="font-weight-bold"> INMUEBLES </h1>
-                <h5 class="justify-content-center row"> Inicio / Inmuebles / Detalle de Inmueble / Código </h5>
+                <h5 class="justify-content-center row"> Inicio / Inmuebles / Detalle de Inmueble / Código:  <?php echo $co; ?> </h5>
             </div>
             <div>
                 <img src="images/detalle_banner_inmueble.png" alt="">
