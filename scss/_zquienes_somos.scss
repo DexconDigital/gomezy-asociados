@@ -3,7 +3,7 @@
 }#descripcion{
 
     #imagenes_iconos{
-        width: 90%;
+        width: 123%;
     }
     
     
@@ -25,42 +25,14 @@
 
 }
 #imagenes_iconos_mision{
-    width: 30%;
+    width: 40%;
     height: 100%;
-    -o-object-fit: contain;
     object-fit: contain;
     padding: 0;
-    margin-left: 21%;
-    margin-top: -2%;
+    margin-left: 34%;
+    margin-top: -7%;
         }
 .fondo{
     background-image: url('../images/rectangulo_azul_gris.png');
     
 }
-.norma_iso{
-    #img{
-        width: 60%;
-        
-    }
-    .cont_iso{
-        right: -9%;
-    }
-    #img2{
-        width: 60%;
-        
-    }
-    .cont_Qa{
-        margin-left: -5%;
-    }
-    .etiqueta{
-        font-size: 12px;
-    margin-left: 208px;
-    
-    margin-top: 21%;
-        
-    }
-}
-.cont_imagen{
-    margin-top: -7%;
-}
-
