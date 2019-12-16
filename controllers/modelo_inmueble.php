@@ -138,6 +138,9 @@ function modelo_inmueble_similare($r)
                                     <img style="width:100%;" src="'. $imagen . '" alt="">
                                 </div>
                             </a>
+
+                           
+                            
                             <li class="justify-content-center align-items-baseline d-flex m-0 ml-3"> <i style="color:#0089CF;" class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
                             <div class="col-12 text-center">
 

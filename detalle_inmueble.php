@@ -1,5 +1,7 @@
 <?php require 'variables/variables.php';
 require 'controllers/detalleInmuebleController.php';
+
+
 $page = 'Inmuebles';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -124,6 +126,17 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 <div class="col-6">
 
                                     <h3> <?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?> </h3>
+                                    <h5 class="font-weight-bold color_azul"> PRECIO:
+                                        <?php if ($r['Gestion'] == 'Arriendo') {
+                                                                        echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                                                                    } else if ($r['Gestion'] == 'Venta') {
+                                                                        echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                                                                    } else {
+                                                                        echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                                                                    }
+                                        ?>
+                                        </p>
+                                    </h5>
                                     <div class="align-items-baseline ml-0 pr-5 row">
                                         <i style="color:#0089CF;" class="direccion fas fa-map-marker-alt"></i>
                                         <p class="ml-2"> <?php echo $r['barrio'] . ', ' . $r['ciudad'] ?></p>
@@ -183,7 +196,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         </a>
                                     </div>
 
-                                    <a style="color:black" href="#" download="#" class="btn"> Descargar ficha </a>
+                                    <a target="_blank" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=447-<?php echo $co ?>" style="color:black" class="btn"> Descargar ficha </a>
 
                                 </div>
 
