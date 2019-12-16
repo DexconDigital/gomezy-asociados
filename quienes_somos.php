@@ -14,11 +14,11 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 </head>
 
 <body>
-      <!-- definir estilo menu, true= transparente false= blanco  -->
-  <script>
-    var isTransparent = false;
-  </script>
-  <!-- ***********************Menu********************** -->
+    <!-- definir estilo menu, true= transparente false= blanco  -->
+    <script>
+        var isTransparent = false;
+    </script>
+    <!-- ***********************Menu********************** -->
 
     <header class="position-fixed sticky-top">
         <?php include 'layout/header2.php' ?>
@@ -26,9 +26,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <section id="banner" class="position-relative">
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
-        <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
-                <h1 class="font-weight-bold" > QUIÉNES SOMOS </h1>
-                <h5 class="justify-content-center row">  Inicio / Quiénes somos  </h5>
+            <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
+                <h1 class="font-weight-bold"> QUIÉNES SOMOS </h1>
+                <h5 class="justify-content-center row"> Inicio / Quiénes somos </h5>
             </div>
             <div>
                 <img src="images/banner_quienes_somos.png" alt="">
@@ -42,7 +42,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
             <div class="container p-0">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 cont_imagen">
                             <img src="images/edificio.png" alt="">
                         </div>
                         <div class="col-6 text-center">
@@ -50,6 +50,22 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?></p>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?></p>
+                            <div class="col-12 text-center norma_iso">
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col-4 cont_iso">
+                                        <img id="img" src="images/icontec_color.png" alt="">
+                                    </div>
+                                    <div class="col-4 cont_Qa ">
+                                        <img id="img2" src="images/IQNET.png" alt="">
+                                    </div>
+                                    <div>
+                                        <span style="font-family: ArialNarrow" ; class="etiqueta">SC4356-1</span>
+                                    </div>
+                                    <div class="col-2"></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
