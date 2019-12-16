@@ -114,7 +114,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                         <div class="m-0 row align-items-center">
                             <h4 class="mr-2 font-weight-bold"> Descarga aquí nuestro brochure:</h4>
-                            <a href="brochure-gomez-y-asociados.pdf" download="brochure-gomez-y-asociados.pdf"><i class="fas fa-file-download"></i></a>
+                            <a href="brochure-gomez-y-asociados.pdf" target="_blank"><i class="fas fa-file-download"></i></a>
                         </div>
 
                     </div>
@@ -296,14 +296,14 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                     </div>
 
                 </div>
-                <div class="row justify-content-around">
+                <div class="row justify-content-around align-items-center">
 
                     <div class="">
                         <img src="images/fenalco.png" alt="">
                     </div>
 
                     <div class="">
-                        <img src="images/icontec.png" alt="">
+                        <img style="width: 570px;" src="images/logo_berkley.png" alt="">
                     </div>
 
                 </div>
