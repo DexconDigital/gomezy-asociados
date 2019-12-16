@@ -46,3 +46,11 @@
         height: 85%;        
     }
 }
+.color_gris{
+    background-color: $gris;
+    color: white;
+
+    &:hover{
+        color: white;
+    }
+}
