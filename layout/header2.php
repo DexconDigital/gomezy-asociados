@@ -121,7 +121,7 @@
                         </a>
                     </li>
                     <li class="align-items-center row mx-2 rounded nav-item <?php echo ($page == "Inmuebles") ? "active" : ""; ?>">
-                        <a class="nav-link" href="inmuebles.php">
+                        <a class="nav-link" href="inmuebles.php?">
                             <h5 class="m-0">Inmuebles</h5>
                         </a>
                     </li>
