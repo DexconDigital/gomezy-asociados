@@ -16,6 +16,29 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <style>
+        #map {
+            height: 350px;
+            z-index: 20;
+        }
+
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
+    </style>
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria; ?></title>
 </head>
@@ -192,10 +215,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                             Video
                                         </button>
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#seis" aria-expanded="false" aria-controls="collapseExample">
-                                            Mapa de ubicación
-                                        </button>
-
                                     </div>
 
                                     <!----------BOTONES---------->
@@ -291,13 +310,14 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                                         </div>
 
-                                        <div id="seis" class="collapse" aria-labelledby="seis" data-parent="#accordion">
-
-                                            <h2> Mapa de ubicación </h2>
-                                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
-
+                                        <div class="mt-5">
+                                            <h2 class="text-center mb-5"> Ubicación del inmueble </h2>
+                                            <div class="card mapa_tamaño">
+                                                <div class="">
+                                                    <div id="map" class="w-100"></div>
+                                                </div>
+                                            </div>
                                         </div>
-
 
                                     </div>
 
@@ -306,10 +326,15 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             </div>
 
                             <!----------INFORMACION BOTONES---------->
+
+
                         </div>
                         <!--Fin botones -->
 
+
+
                     </section>
+
 
                 </section>
 
@@ -403,6 +428,21 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 }
             ]
         });
+    </script>
+
+    <!-- MAPA DE INMUEBLES -->
+
+<script src="mapas/leaflet.js" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+            .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+            .openPopup();
     </script>
 
 </body>
