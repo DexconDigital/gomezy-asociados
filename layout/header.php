@@ -137,7 +137,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=447&tipo=1"> Propietarios </a>
                             <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=447&tipo=2"> Arrendatarios </a>
-                            <a class="dropdown-item" href="#"> Pagos PSE </a>
+                            <a class="dropdown-item" target="_blank" href="https://www.e-collect.com/customers/PagosInmGomezAsociados.htm"> Pagos PSE </a>
                         </div>
                     </li>
 
@@ -154,7 +154,7 @@
 
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
-                    <a href="#"><img class="img_pse" src="images/logopse.png" alt=""></a href="#">
+                    <a target="_blank" href="https://www.e-collect.com/customers/PagosInmGomezAsociados.htm"><img class="img_pse" src="images/logopse.png" alt=""></a>
                 </div>
             </div>
         </nav>
