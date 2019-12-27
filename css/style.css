@@ -8244,6 +8244,10 @@ header .header_iconos .container-fluid {
   height: 50px;
   background-color: #0089CF; }
 
+@media (max-width: 991px) {
+  header .header_iconos .margen_pse {
+    margin-left: 0.5rem; } }
+
 header .header_nav {
   background-color: #00000078; }
   header .header_nav .dropdown-item {
@@ -8387,8 +8391,17 @@ header .header_nav2 {
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
   #contenido_pagina_principal #descripcion_nosotros img {
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
     width: 100%;
     height: 397px; }
+  @media (max-width: 500px) {
+    #contenido_pagina_principal #descripcion_nosotros img {
+      height: 200px; } }
+  @media (max-width: 425px) {
+    #contenido_pagina_principal #descripcion_nosotros h4 {
+      font-size: 19px; } }
   #contenido_pagina_principal #nuestros_servicios {
     background-color: white; }
     #contenido_pagina_principal #nuestros_servicios i {
@@ -8416,15 +8429,22 @@ header .header_nav2 {
   #contenido_pagina_principal #aliados img {
     width: 60%;
     height: 100%; }
+  @media (max-width: 425px) {
+    #contenido_pagina_principal #aliados .berkley {
+      margin-top: 58px; }
+      #contenido_pagina_principal #aliados .berkley img {
+        width: 90%; } }
 
 footer {
   background-color: #4C555A;
   color: white; }
-  footer ul a {
-    text-decoration: none;
-    color: white; }
-    footer ul a:hover {
-      color: #0089CF; }
+  footer ul {
+    padding-left: 20px; }
+    footer ul a {
+      text-decoration: none;
+      color: white; }
+      footer ul a:hover {
+        color: #0089CF; }
   footer .matriculas {
     font-size: 15px; }
   footer .color_boton_footer {
@@ -8440,6 +8460,11 @@ footer {
       color: #0089CF; }
       footer .borde a:hover {
         color: #09428E; }
+  footer span {
+    font-family: corbel; }
+  @media (max-width: 958px) {
+    footer .borde span {
+      display: block; } }
 
 .subir {
   display: none;
@@ -8481,15 +8506,13 @@ footer {
   margin-top: 3%; }
 
 #descripcion #imagenes_iconos {
-  width: 123%; }
+  width: 30%; }
 
 #descripcion img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
-  padding: 2%;
-  margin-top: -13%; }
+  object-fit: contain; }
 
 #descripcion h2 {
   font-weight: bold; }
@@ -8497,56 +8520,21 @@ footer {
 #descripcion .margen_iconos_imagen {
   margin-top: 59%; }
 
-#imagenes_iconos_mision {
-  width: 40%;
-  height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-  padding: 0;
-  margin-left: 34%;
+#descripcion .norma_iso img {
+  width: 25%; }
+
+#descripcion .norma_iso .etiqueta {
+  font-size: 12px; }
+
+#descripcion .cont_imagen {
   margin-top: -7%; }
 
 .fondo {
-  background-image: url("../images/rectangulo_azul_gris.png"); }
-
-#descripcion #imagenes_iconos {
-  width: 123%;
-  width: 90%; }
+  background-color: #E8E8E8; }
 
 #imagenes_iconos_mision {
-  width: 40%;
-  width: 30%;
-  height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-  padding: 0;
-  margin-left: 34%;
-  margin-top: -7%;
-  margin-left: 21%;
-  margin-top: -2%; }
-
-.fondo {
-  background-image: url("../images/rectangulo_azul_gris.png"); }
-
-.norma_iso #img {
-  width: 60%; }
-
-.norma_iso .cont_iso {
-  right: -9%; }
-
-.norma_iso #img2 {
-  width: 60%; }
-
-.norma_iso .cont_Qa {
-  margin-left: -5%; }
-
-.norma_iso .etiqueta {
-  font-size: 12px;
-  margin-left: 208px;
-  margin-top: 21%; }
-
-.cont_imagen {
-  margin-top: -7%; }
+  width: 125px;
+  height: 100px; }
 
 #servicios .fas {
   font-size: 50px;
@@ -8560,6 +8548,16 @@ footer {
 
 #servicios h2 {
   font-weight: bold; }
+
+#servicios img {
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  width: 50%; }
+
+@media (max-width: 425px) {
+  #servicios img {
+    width: 100%; } }
 
 #consignar .color_btn {
   background-color: white;

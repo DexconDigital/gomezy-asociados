@@ -98,20 +98,21 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
             <div class="my-5 container">
 
                 <div class="text-justify row">
-                    <div class="col-6">
-                        <img src="images/custom1.jpg" alt="">
-                    </div>
-                    <div class="col-6">
+
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-5 mb-lg-0 mb-xl-0 text-justify">
                         <h2 class="mb-5 font-weight-bold text-center"> <?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?> </h2>
                         <p> <?php echo $texto_quienes_somos['quienes_somos']['parrafos']['0'] ?> </p>
                         <p> <?php echo $texto_quienes_somos['quienes_somos']['parrafos']['2'] ?> </p>
 
-
-                        <div class="m-0 row align-items-center">
+                        <div class="m-0 row order-3 align-items-center justify-content-center justify-content-lg-left justify-content-xl-left">
                             <h4 class="mr-2 font-weight-bold"> Descarga aquí nuestro brochure:</h4>
                             <a href="brochure_gomez_asociados.pdf" target="blank"><i class="fas fa-file-download"></i></a>
                         </div>
 
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                        <img src="images/custom1.jpg" alt="">
                     </div>
 
                 </div>
@@ -134,7 +135,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <div class="row justify-content-around">
 
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center" href="servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -145,7 +146,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </a>
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center" href="servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -156,7 +157,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </a>
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center" href="servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -171,7 +172,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                         <div class="row justify-content-around">
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center href=" servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -182,7 +183,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </a>
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center href=" servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -193,7 +194,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </a>
 
-                            <a href="servicios.php">
+                            <a class="col-12 col-md-4 col-lg-4 col-xl-4 row justify-content-center href=" servicios.php">
                                 <div class="justify-content-center mb-5 panal row">
 
                                     <div class="align-items-center flex-column justify-content-center row">
@@ -279,20 +280,20 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                     <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/libertador.png" alt="">
                     </div>
-    
+
                     <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/unifianza.png" alt="">
                     </div>
-    
+
                     <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/fgi.png" alt="">
                     </div>
-    
+
                     <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-5 col-xg-7">
                         <img style="width:40%" src="images/fenalco.png" alt="">
                     </div>
-    
-                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-8 col-lg-7 col-xg-7">
+
+                    <div class="berkley d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-8 col-lg-7 col-xg-7">
                         <img src="images/logo_berkley.png" alt="">
                     </div>
                 </div>

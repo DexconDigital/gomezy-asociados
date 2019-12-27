@@ -45,13 +45,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- Arrendamientos -->
                 <div class="col-12 borde mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6 p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-3">
                             <h2 class="text-center"><?php echo $texto_servicios['arrendamientos']['titulo']  ?> </h2>
-                            <div class="col-12 mt-3   text-center">
+                            <div class="col-12 mt-3 text-center">
                                 <span><i class="<?php echo $iconos_servicios['arrendamientos'] ?>"></i></span>
                             </div>
                         </div>
-                        <div class="col-6 p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['arrendamientos']['parrafo']  ?> </p>
                         </div>
                     </div>
@@ -59,10 +59,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- ventas -->
                 <div class="col-12 borde  mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6  p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['ventas']['parrafo']  ?> </p>
                         </div>
-                        <div class="col-6  p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-2 order-lg-2 order-xl-2 p-3">
                             <h2 class="text-center"><?php echo $texto_servicios['ventas']['titulo']  ?> </h2>
                             <div class="col-12 mt-3  text-center">
                                 <span><i class="<?php echo $iconos_servicios['ventas'] ?>"></i></span>
@@ -73,13 +73,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- Avaluos -->
                 <div class="col-12 borde  mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6  p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-3">
                             <h2 class="text-center"><?php echo $texto_servicios['avaluos']['titulo']  ?> </h2>
                             <div class="col-12 mt-3  text-center">
                                 <span><i class="<?php echo $iconos_servicios['avaluos'] ?>"></i></span>
                             </div>
                         </div>
-                        <div class="col-6  p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['avaluos']['parrafo']  ?> </p>
                         </div>
                     </div>
@@ -88,10 +88,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- Matenimiento -->
                 <div class="col-12 borde mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6 p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['mantenimientos']['parrafo']  ?> </p>
                         </div>
-                        <div class="col-6 p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 p-3">
                             <h2 class="text-center"><?php echo $texto_servicios['mantenimientos']['titulo']  ?> </h2>
                             <div class="col-12 mt-3   text-center">
                                 <span><i class="<?php echo $iconos_servicios['mantenimiento'] ?>"></i></span>
@@ -104,13 +104,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- Asesorias -->
                 <div class="col-12 borde  mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6 p-4 ">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4 ">
                             <h2 class="text-center"><?php echo $texto_servicios['asesoria']['titulo']  ?> </h2>
                             <div class="col-12 mt-3 text-center">
                                 <span><i class="<?php echo $iconos_servicios['asesoria'] ?>"></i></span>
                             </div>
                         </div>
-                        <div class="col-6 p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][0]  ?> </p>
                             <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][1]  ?> </p>
                         </div>
@@ -119,11 +119,11 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <!-- Administracion -->
                 <div class="col-12 borde  mt-3">
                     <div class="row align-items-center">
-                        <div class="col-6 p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][0]  ?> </p>
                             <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][1]  ?> </p>
                         </div>
-                        <div class="col-6 p-5">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 p-5">
                             <h2 class="text-center"><?php echo $texto_servicios['administracion']['titulo']  ?> </h2>
                             <div class="col-12 mt-3 text-center">
                                 <span><i class="<?php echo $iconos_servicios['administracion'] ?>"></i></span>
@@ -135,20 +135,20 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <div class="col-12 borde  mt-3">
                     <div class="row align-items-center">
 
-                        <div class="col-6  p-4">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
                             <h2 class="text-center"><?php echo $texto_servicios['inversiones']['titulo']  ?> </h2>
                             <div class="col-12 mt-3  text-center">
                                 <span><i class="<?php echo $iconos_servicios['inversiones'] ?>"></i></span>
                             </div>
                         </div>
-                        <div class="col-6  p-2 mt-3">
-                            <p class="text-justify"><?php echo   $texto_servicios['inversiones']['parrafos'][0]  ?> </p>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-2 mt-3">
+                            <p class="text-justify p-4"><?php echo   $texto_servicios['inversiones']['parrafos'][0]  ?> </p>
                         </div>
                         <div class="mb-3 col-12">
-                            <p class="text-justify"><?php echo   $texto_servicios['inversiones']['parrafos'][1]  ?> </p>
+                            <p class="text-justify p-4"><?php echo   $texto_servicios['inversiones']['parrafos'][1]  ?> </p>
                             <div class="row">
-                                <p class="text-justify col-6"><?php echo   $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
-                                <div class="imagen_inversiones row align-items-center justify-content-center col-6"><img src="images/gomez_y_loaiza.png" alt=""></div>
+                                <p class="order-2 col-12 text-justify p-4"> <?php echo $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
+                                <div class="order-1 col-12 row align-items-center justify-content-center m-0"><img src="images/gomez_y_loaiza.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -162,18 +162,19 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <section id="consignar">
         <div class="container  mt-3">
-            <div class="col-12 color_fondo">
-                <div class="row">
-                    <div class="col-5 mt-3">
-                        <h3 class="color_texto">Consigna tu inmueble aquí</h3>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-3 margen_boton">
-                        <a class="btn color_btn rounded" data-toggle="modal" data-target="#exampleModal">Consignar Inmueble</a>
+            <div class="col-12 color_fondo rounded">
+                <div class="p-2 row">
+
+                    <div class="d-flex align-items-center justify-content-center col-12 col-md-12 col-lg-5 col-xl-5">
+                        <h3 class="color_texto text-center">Consigna tu inmueble aquí:</h3>
                     </div>
 
-                    <div class="col-3 margen_boton">
-                        <a class="btn color_btn rounded" href="http://gomezloaizarealty.com/" target="blank"> Aliado Estratégico</a>
+                    <div class="p-0 col-12 col-lg-3 col-xl-3 m-0 margen_boton mb-2 mb-lg-0 mb-xl-0 ">
+                        <a class="m-0 w-100 btn color_btn rounded" data-toggle="modal" data-target="#exampleModal">Consignar Inmueble</a>
+                    </div>
+
+                    <div class="p-0 col-12 col-lg-3 col-xl-3 m-0 margen_boton mb-2 mb-lg-0 mb-xl-0">
+                        <a class="m-0 w-100 btn color_btn rounded" href="http://gomezloaizarealty.com/" target="blank"> Aliado Estratégico</a>
                     </div>
 
                 </div>

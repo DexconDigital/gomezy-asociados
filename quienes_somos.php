@@ -36,80 +36,113 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         </div>
     </section>
 
-    <div id="contenedor" class="container-fluid body ">
 
-        <section id="descripcion" class="">
+    <section id="contenedor" class="container-fluid body ">
+
+        <div id="descripcion" class="mt-5">
             <div class="container p-0">
+
+                <!-- QUIENES SOMOS -->
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="mb-4 mb-md-0 mb-lg-0 mg-xl-0 col-12 col-md-6 col-lg-6 col-xl-6">
                             <img src="images/edificio.png" alt="">
                         </div>
-                        <div class="col-6 text-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6  text-center">
                             <h2 class="mb-4"><?php echo $texto_quienes_somos['quienes_somos']['titulo']  ?></h2>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?></p>
                             <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?></p>
+                                
                             <div class="col-12 text-center norma_iso">
                                 <div class="row">
-                                    <div class="col-2"></div>
-                                    <div class="col-4 cont_iso">
-                                        <img id="img" src="images/icontec_color.png" alt="">
+
+                                    <div class="p-0 d-flex justify-content-end col-6 cont_iso">
+                                        <img src="images/icontec_color.png" alt="">
                                     </div>
-                                    <div class="col-4 cont_Qa ">
-                                        <img id="img2" src="images/IQNET.png" alt="">
+                                    <div class="p-0 d-flex justify-content-start col-6 cont_Qa ">
+                                        <img src="images/IQNET.png" alt="">
                                     </div>
-                                    <div>
+
+                                    <div class="col-12 text-center">
                                         <span style="font-family: ArialNarrow" ; class="etiqueta">SC4356-1</span>
                                     </div>
-                                    <div class="col-2"></div>
+
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- QUIENES SOMOS -->
+
+
+                <!-- MISION VISION -->
                 <div class="col-12 mt-5">
                     <div class="row">
-                        <div class="col-6">
+
+                        <div class="mt-4 mt-md-0 mt-lg-0 mt-xl-0 col-12 col-md-6 col-lg-6 col-xl-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="col-12 margen_iconos_imagen">
+
+                                <div class="mb-3 col-12 text-center row justify-content-center align-items-center ">
+
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img id="imagenes_iconos" src="images/mision_1.png" alt="">
                                     </div>
+                                    <div class="col-6 d-flex justify-content-start align-items-center p-0">
+                                        <h2 class="m-0"><?php echo $texto_quienes_somos['mision']['titulo']  ?></h2>
+                                    </div>
 
                                 </div>
-                                <div class="col-8 text-center">
-                                    <h2 class="mb-4"><?php echo $texto_quienes_somos['mision']['titulo']  ?></h2>
+
+                                <div class="col-12">
                                     <p class="text-justify"><?php echo $texto_quienes_somos['mision']['parrafo'] ?></p>
                                 </div>
+
                             </div>
+
                         </div>
-                        <div class="col-6">
+
+                        <div class="mt-4 mt-md-0 mt-lg-0 mt-xl-0 mb-5 mb-md-0 mb-lg-0 mb-xl-0 col-12 col-md-6 col-lg-6 col-xl-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="col-12 margen_iconos_imagen">
+
+                                <div class="mb-3 col-12 text-center row justify-content-center align-items-center ">
+
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
                                         <img id="imagenes_iconos" src="images/vision_1.png" alt="">
                                     </div>
+                                    <div class="col-6 d-flex justify-content-start align-items-center p-0">
+                                        <h2 class="m-0"><?php echo $texto_quienes_somos['vision']['titulo']  ?></h2>
+                                    </div>
+
                                 </div>
-                                <div class="col-8 text-center">
-                                    <h2 class="mb-4"><?php echo $texto_quienes_somos['vision']['titulo']  ?></h2>
+
+                                <div class="col-12">
                                     <p class="text-justify"><?php echo $texto_quienes_somos['vision']['parrafo'] ?></p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </section>
-    </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- MISION VISION -->
+
+            </div>
+        </div>
+
+    </section>
+
+
     <section class="fondo">
         <div class="col-12 mt-5 ">
             <h2 class="mb-4 text-center"><?php echo $texto_quienes_somos['valores']['titulo']  ?></h2>
             <div class="row">
 
-                <div class="col-4 text-left d-flex justify-content-center">
-                    <ul>
+                <div class="mt-3 mt-md-0 mt-lg-0 mt-xl-0 col-12 col-md-4 col-lg-4 col-xl-4 order-2 order-md-1 order-lg-1 order-xl-1 text-left d-flex justify-content-center">
+                    <ul class="d-flex flex-column col-10 m-md-0 m-lg-0 m-xl-0 m-auto">
                         <li>
                             <p><?php echo $texto_quienes_somos['valores']['parrafos'][0] ?></p>
                         </li>
@@ -121,8 +154,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                    <ul>
+
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 order-3 order-md-2 order-lg-2 order-xl-2 text-left d-flex justify-content-center">
+                    <ul class="d-flex flex-column col-10 m-md-0 m-lg-0 m-xl-0 m-auto">
                         <li>
                             <p><?php echo $texto_quienes_somos['valores']['parrafos'][3] ?></p>
                         </li>
@@ -134,11 +168,11 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </li>
                     </ul>
                 </div>
-                <div class="col-4">
-                    <div class="col-12">
-                        <img id="imagenes_iconos_mision" src="images/valores_1.png" alt="">
-                    </div>
+
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 order-1 order-md-3 order-lg-3 order-xl-3 d-flex justify-content-center align-items-center">
+                    <img id="imagenes_iconos_mision" src="images/valores_1.png" alt="">
                 </div>
+
             </div>
         </div>
     </section>
@@ -149,6 +183,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <?php include 'layout/footer.php' ?>
 
     </footer>
+
+
+
 
 </body>
 <?php include 'layout/archivosfooter.php'; ?>

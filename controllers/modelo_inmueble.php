@@ -74,7 +74,7 @@ function modelo_inmueble_todos($r)
         }
         // fin de recortar cadena
         echo '
-        <div class="mb-5 col-4 px-3">
+        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4 px-3">
             <div class="card card-max-height">
                 <img src="' . $imagen . '" class="card-img-top" alt="...">
             <div class="card-body">
@@ -130,7 +130,7 @@ function modelo_inmueble_similare($r)
     $api = $r[$i];
 
     echo ' 
-            <div class="mb-3 col-12 border-top border-bottom">
+            <div class="mb-3 col-12 border-top border-bottom mb-5 col-12 col-md-6 col-lg-4 col-xl-4 px-3">
             <h5 class="text-center py-3 px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
                             <a href="detalle_inmueble.php?co=' . $codigo . '" class="row align-items-center">
                             

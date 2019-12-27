@@ -153,7 +153,7 @@
                     </li>
 
                 </ul>
-                <div class="form-inline my-2 my-lg-0">
+                <div class="margen_pse form-inline my-2 my-lg-0">
                     <a target="_blank" href="https://www.e-collect.com/customers/PagosInmGomezAsociados.htm"><img class="img_pse" src="images/logopse.png" alt=""></a>
                 </div>
             </div>

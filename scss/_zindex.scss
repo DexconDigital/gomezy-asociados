@@ -128,6 +128,12 @@ header {
             height: 50px;
             background-color: $azul_claro;
         }
+
+        @media (max-width:991px) {
+            .margen_pse {
+                margin-left: 0.5rem;
+            }
+        }
     
     }
 
@@ -386,11 +392,23 @@ header {
         }
     
         img {
+            transition: all 250ms ease-in-out;
             width: 100%;
             height: 397px;
         }
 
+        @media (max-width:500px){
+            img {
+                height: 200px;
+            }
+        }
 
+        @media (max-width:425px) {
+
+            h4 {
+                font-size: 19px;
+            }
+        }
 
     }
 
@@ -443,6 +461,20 @@ header {
             width: 60%;
             height: 100%;
         }
+
+        @media (max-width:425px) {
+
+            .berkley {
+
+                margin-top: 58px;
+
+                img {
+                    width: 90%;
+                }
+                
+            }
+
+        }
         
     }
 
@@ -451,6 +483,8 @@ header {
 footer {
 
     ul {
+
+        padding-left: 20px;
         a {
             text-decoration: none;
             color: white;
@@ -495,7 +529,25 @@ footer {
         }
 
     }
+
+    span {
+        font-family: corbel;
+    }
+
+
+    @media (max-width:958px) {
+        .borde {
+            span {
+                display: block;
+            }
+        }
+    }
+
+
 }
+
+
+
 .subir {
     display: none;
     padding: 15px;
