@@ -8719,15 +8719,13 @@ footer {
       left: 0;
       right: 0;
       margin: auto; }
-  .bg-transparent .dropdown-item {
-    color: black !important; }
   .bg-transparent .dropdown-menu {
     padding: 0;
     background-color: white !important;
     color: white !important; }
   .bg-transparent .dropdown-item:hover,
   .bg-transparent .dropdown-item:focus {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     background-color: #0089CF !important; }
 
@@ -8752,6 +8750,14 @@ footer {
     color: black; }
   .bg-light .information {
     border-bottom: 1px solid rgba(29, 29, 29, 0.116); }
+
+.dropdown-menu {
+  padding: 0; }
+
+.dropdown-item {
+  color: black !important; }
+  .dropdown-item:hover {
+    color: white !important; }
 
 .total-menu {
   -webkit-box-shadow: -1px -1px 5px 0px #666666;

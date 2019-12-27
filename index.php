@@ -276,23 +276,23 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <h2 class="font-weight-bold text-center mb-5 "> Nuestros Aliados </h2>
 
                 <div class="row align-items-center justify-content-center">
-                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/libertador.png" alt="">
                     </div>
     
-                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/unifianza.png" alt="">
                     </div>
     
-                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/fgi.png" alt="">
                     </div>
     
-                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-5 col-xg-7">
-                        <img src="images/fenalco.png" alt="">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-5 col-xg-7">
+                        <img style="width:40%" src="images/fenalco.png" alt="">
                     </div>
     
-                    <div class="d-flex align-items-center justify-content-center col-12d">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-8 col-lg-7 col-xg-7">
                         <img src="images/logo_berkley.png" alt="">
                     </div>
                 </div>

@@ -32,8 +32,17 @@
       }
     }
   }
+
+
+
+
+
+
+
+
   
-  // diseño menu cuando sea transparente
+  // diseño menu TRANSPARENTE
+
   .bg-transparent {
     /* background-color: rgba(0, 0, 0, 0.247) !important; */
     a {
@@ -61,10 +70,6 @@
       }
     }
 
-    .dropdown-item {
-      color: black!important;
-
-    }
     .dropdown-menu {
       padding: 0;
       background-color: white!important;
@@ -73,11 +78,13 @@
     }
     .dropdown-item:hover,
     .dropdown-item:focus {
-      color: $white;
+      color: $white!important;
       text-decoration: none;
       background-color: $azul_claro!important;
     }
+
   }
+  
 
 
 
@@ -87,7 +94,8 @@
 
   
   
-  // diseño de menu cuando no es transparente
+  // diseño de menu BLANCO
+
   .bg-light {
     // Colocar aqui diseño
 
@@ -116,6 +124,19 @@
     }
     .information {
       border-bottom: 1px solid rgba(29, 29, 29, 0.116);
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+  }
+
+  .dropdown-item {
+    
+    color: black!important;
+
+    &:hover {
+      color: white!important;
     }
   }
   
