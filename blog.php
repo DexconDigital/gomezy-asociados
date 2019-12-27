@@ -41,10 +41,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
         <h2 class="font-weight-bold text-center my-5"> Últimas Noticias </h2>
             <div class="col-12">
-                <div class="row">
+                <div class="row justify-content-center">
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -56,8 +56,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -69,8 +69,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -82,8 +82,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -95,8 +95,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -108,8 +108,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
 
-                    <div class="mb-5 col-4">
-                        <div class="card" style="width: 21rem;">
+                    <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 100%;">
                             <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="color_titulo">Últimas Ofertas</h4>

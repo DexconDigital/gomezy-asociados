@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'variables/variables.php';
 require 'controllers/indexController.php';
@@ -39,13 +39,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
+                    <img src="images/slide1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
+                    <img src="images/slide2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -69,8 +69,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
     <section id="contenido_pagina_principal" class="border-top mt-5">
 
         <section id="propiedades_destacadas">
-
-
 
             <div class="container p-0">
 
@@ -99,9 +97,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
             <div class="my-5 container">
 
-
-
-
                 <div class="text-justify row">
                     <div class="col-6">
                         <img src="images/custom1.jpg" alt="">
@@ -114,7 +109,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                         <div class="m-0 row align-items-center">
                             <h4 class="mr-2 font-weight-bold"> Descarga aquí nuestro brochure:</h4>
-                            <a href="brochure-gomez-y-asociados.pdf" target="_blank"><i class="fas fa-file-download"></i></a>
+                            <a href="brochure_gomez_asociados.pdf" target="blank"><i class="fas fa-file-download"></i></a>
                         </div>
 
                     </div>
@@ -223,18 +218,15 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
         </section>
 
-        <section id="propiedades_destacadas">
-
-
-
-            <div class="container p-0">
+        <section id="blog">
+            <div class="container">
 
                 <h2 class="font-weight-bold text-center my-5"> Últimas Noticias </h2>
-
                 <div class="col-12">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card" style="width: 21rem;">
+                    <div class="row justify-content-center">
+
+                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card" style="width:100%;">
                                 <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -245,8 +237,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card" style="width: 21rem;">
+
+                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card" style="width:100%;">
                                 <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -257,8 +250,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card" style="width: 21rem;">
+
+                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card" style="width:100%;">
                                 <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h4 class="color_titulo">Últimas Ofertas</h4>
@@ -269,11 +263,11 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
-
             </div>
-
         </section>
 
         <section id="aliados" class="my-5">
@@ -281,32 +275,28 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                 <h2 class="font-weight-bold text-center mb-5 "> Nuestros Aliados </h2>
 
-                <div class="row justify-content-around">
-
-                    <div class="">
+                <div class="row align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/libertador.png" alt="">
                     </div>
-
-                    <div class="">
+    
+                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/unifianza.png" alt="">
                     </div>
-
-                    <div class="">
+    
+                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/fgi.png" alt="">
                     </div>
-
-                </div>
-                <div class="row justify-content-around align-items-center">
-
-                    <div class="">
+    
+                    <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-4 col-lg-5 col-xg-7">
                         <img src="images/fenalco.png" alt="">
                     </div>
-
-                    <div class="">
-                        <img style="width: 570px;" src="images/logo_berkley.png" alt="">
+    
+                    <div class="d-flex align-items-center justify-content-center col-12d">
+                        <img src="images/logo_berkley.png" alt="">
                     </div>
-
                 </div>
+
             </div>
         </section>
 

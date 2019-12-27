@@ -10,7 +10,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
 
         echo '
         
-            <div class="mb-5 col-4 px-3">
+            <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4 px-3">
                   <div class="card card-max-height">
                       <img src="' . $imagen . '" class="card-img-top" alt="...">
                       <div class="card-body">
