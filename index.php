@@ -17,6 +17,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 </head>
 
 <body>
+    
     <!-- definir estilo menu, true= transparente false= blanco  -->
     <script>
         var isTransparent = true;
@@ -312,6 +313,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <?php include 'layout/archivosfooter.php'; ?>
     <script src="js/menu.js"></script>
+
 </body>
 
 </html>

@@ -298,15 +298,27 @@ header {
     }
 }
 
+
+
+
+
 #carrusel_imagenes_principales {
     margin-top: 50px;
+
 }
 
-@media (max-width:650px) {
+@media (max-width:991px) {
 
     #carrusel_imagenes_principales {
         transition: all 250ms ease-in-out;
         margin-top: 168px;
+
+        height: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 

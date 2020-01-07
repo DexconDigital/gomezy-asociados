@@ -8324,12 +8324,16 @@ header .header_nav2 {
 #carrusel_imagenes_principales {
   margin-top: 50px; }
 
-@media (max-width: 650px) {
+@media (max-width: 991px) {
   #carrusel_imagenes_principales {
     -webkit-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    margin-top: 168px; } }
+    margin-top: 168px;
+    height: 200px; }
+    #carrusel_imagenes_principales img {
+      height: 100%;
+      width: 100%; } }
 
 @media (max-width: 991px) {
   .header_nav {

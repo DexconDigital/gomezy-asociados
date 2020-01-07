@@ -62,10 +62,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
 
     <footer>
-
         <?php include 'layout/footer.php' ?>
-
     </footer>
+
     <?php include 'layout/archivosfooter.php'; ?>
 </body>
 
