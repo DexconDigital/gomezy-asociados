@@ -41,6 +41,21 @@
             img{
                 width: 70%;
             }
+
+            @media (max-width:499px) {
+                img {
+                    width: 30%;
+                }
+            }
+    
+
+            @media (min-width:500px) and (max-width:991px) {
+                img {
+                    width: 20%;
+                }
+            }
+
+
     
         }
 
@@ -72,11 +87,31 @@
 
             img {
                 transition: all 200ms ease-in-out;
-                width: 100%;
+                width: 70%;
             }
 
         }
 
     }
+
+    @media (max-width:767px) {
+        .col-12-responsive {
+            width: 100%;
+        }
+    }
+
+    .video_tamaño {
+        height: 300px;
+    }
+
+    @media (max-width:767px) {
+        .video_tamaño {
+            height: 200px;
+        }
+    }
+
+  
+
+    
 
 }

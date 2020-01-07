@@ -53,24 +53,24 @@
         <div class="container">
 
             <div class="justify-content-end align-items-center row">
-                <div class="d-flex">
+                <div class="d-flex mr-3">
 
                     <div class="ml-3 telefonos_header">
                         <a href="tel: <?php echo $datos_contacto['telefono_fijo']['link'] ?>">
                             <i class="<?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i>
-                            <?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>
+                            <h6 class="d-inline esconder_telefono"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></h6>
                         </a>
                     </div>
 
                     <div class="ml-3 telefonos_header">
                         <a href="tel: <?php echo $datos_contacto['celular']['link'] ?>">
                             <i class="<?php echo $datos_contacto['celular']['icono'] ?>"></i>
-                            <?php echo $datos_contacto['celular']['imprimir'] ?>
+                            <h6 class="d-inline esconder_telefono"><?php echo $datos_contacto['celular']['imprimir'] ?> </h6>
                         </a>
                     </div>
                 </div>
 
-                <div class="ml-5 d-flex">
+                <div class="iconos_responsive ml-5 d-flex">
 
                     <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
                         <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i> </div>
@@ -85,7 +85,7 @@
                     </a>
 
                     <a target="_blank" href="<?php echo $redes_sociales['youtube']['link'] ?>">
-                        <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
+                        <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
                     </a>
                     
                 </div>
@@ -102,7 +102,8 @@
 
     <div class="container p-0 py-1">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <a class="navbar-brand" href="index.php"><img class="img_logo" src="images/logo_blanco.png" alt="" id="imagen_menu"></a>
+            <a class="navbar-brand" href="index.php"><img class="ml-3 img_logo 
+            margen_pse" src="images/logo_blanco.png" alt="" id="imagen_menu"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -153,8 +154,8 @@
                     </li>
 
                 </ul>
-                <div class="margen_pse form-inline my-2 my-lg-0">
-                    <a target="_blank" href="https://www.e-collect.com/customers/PagosInmGomezAsociados.htm"><img class="img_pse" src="images/logopse.png" alt=""></a>
+                <div class="form-inline my-2 my-lg-0">
+                    <a target="_blank" href="https://www.e-collect.com/customers/PagosInmGomezAsociados.htm"><img class="mr-3 img_pse margen_pse" src="images/logopse.png" alt=""></a>
                 </div>
             </div>
         </nav>

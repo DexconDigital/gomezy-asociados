@@ -26,9 +26,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <section id="banner" class="position-relative">
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
-        <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
-                <h1 class="font-weight-bold" > CONTÁCTANOS </h1>
-                <h5 class="justify-content-center row">  Inicio / Contáctanos  </h5>
+            <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
+                <h1 class="font-weight-bold"> CONTÁCTANOS </h1>
+                <h5 class="justify-content-center row"> Inicio / Contáctanos </h5>
             </div>
             <div>
                 <img src="images/banner_contacto.png" alt="">
@@ -46,7 +46,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="container">
             <div class="col-12"></div>
             <div class="row">
-                <div class="col-6">
+
+                <!-- DATOS DE CONTACTO -->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="text-left mb-4">
                         Datos de Contacto
                     </h2>
@@ -72,18 +74,33 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             </li>
                         </ul>
                         <hr>
-                        <div class="col-12 ">
-                            <div class="d-flex" style="margin-left: 25%;">
-                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"> <a href="<?php echo $datos_contacto['whatsapp']['link'] ?>" target="_blank"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i></a> </div>
-                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"> <a href="<?php echo $redes_sociales['facebook']['link'] ?>" target="_blank"><i style="font-size:18px;" class="<?php echo $redes_sociales['facebook']['icono'] ?>"></i></a></div>
-                                 <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"> <a href="<?php echo $redes_sociales['instagram']['link']  ?>" target="_blank"><i style="font-size:18px;" class="<?php echo $redes_sociales['instagram']['icono'] ?>"></i></a></div>
-                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"><a href="<?php echo $redes_sociales['youtube']['link'] ?>" target="_blank"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i></a> </div>
-                            </div>
+
+                        <div class="col-12 align-items-center justify-content-center d-flex">
+
+                            <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
+                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i> </div>
+                            </a>
+
+                            <a target="_blank" href="<?php echo $redes_sociales['facebook']['link'] ?>">
+                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['facebook']['icono'] ?>"></i> </div>
+                            </a>
+
+                            <a target="_blank" href="<?php echo $redes_sociales['instagram']['link'] ?>">
+                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['instagram']['icono'] ?>"></i> </div>
+                            </a>
+
+                            <a target="_blank" href="<?php echo $redes_sociales['youtube']['link'] ?>">
+                                <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
+                            </a>
+
                         </div>
 
                     </div>
                 </div>
-                <div class="col-6">
+                <!-- DATOS DE CONTACTO -->
+
+                <!-- FORMULARIO DE CONTACTO -->
+                <div class="mt-4 mt-md-0 mt-lg-0 mt-xl-0 col-12 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="text-left mb-4">
                         Formulario de contacto
                     </h2>
@@ -117,6 +134,8 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
                 </div>
+                <!-- FORMULARIO DE CONTACTO -->
+
 
                 <div class="col-12 mb-4">
                     <hr>
@@ -125,49 +144,49 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             Escríbenos
                         </h2>
                         <div class="row mt-4">
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['arrendamientos_ventas']['correo'] ?>">
                                     <img src="images/mercadeo.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Arrendamientos ventas</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['cartera']['correo'] ?>">
                                     <img src="images/cartera.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Cartera</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['mantenimientos']['correo'] ?>">
                                     <img src="images/mtto.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Mantenimientos</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['restituciones']['correo'] ?>">
                                     <img src="images/restituciones.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Restituciones</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['pagos']['correo'] ?>">
                                     <img src="images/pagos.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Pagos</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="<?php echo $datos_contacto['correos']['servicios_publicos']['correo'] ?>">
                                     <img src="images/servicios_publicos.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Servicios Publicos</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['contabilidad']['correo'] ?>">
                                     <img src="images/gestion_financiera.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Contabilidad</p>
                                 </a>
                             </div>
-                            <div class="col-3 text-center">
+                            <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['proteccion_datos']['correo'] ?>">
                                     <img src="images/proteccion_datos.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Proteccion Datos</p>

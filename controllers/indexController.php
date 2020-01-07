@@ -4,7 +4,7 @@ require 'modelo_inmueble.php';
 
 $ch = curl_init();
     $headers =  'Authorization:' . TOKEN;
-    curl_setopt($ch, CURLOPT_URL,'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/12');
+    curl_setopt($ch, CURLOPT_URL,'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/6');
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);

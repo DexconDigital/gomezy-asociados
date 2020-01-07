@@ -65,7 +65,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
                 <h1 class="font-weight-bold"> INMUEBLES </h1>
-                <h5 class="justify-content-center row"> Inicio / Inmuebles / Detalle de Inmueble / Código:  <?php echo $co; ?> </h5>
+                <h5 class="col-12 justify-content-center row"> Inicio / Inmuebles / Detalle de Inmueble / Código: <?php echo $co; ?> </h5>
             </div>
             <div>
                 <img src="images/detalle_banner_inmueble.png" alt="">
@@ -79,41 +79,41 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
             <div class="row">
 
-                <section id="seccion_izquierda" class="col-8">
+                <section id="seccion_izquierda" class="col-12 col-lg-8 col-xl-8">
 
                     <!-- Inicio carrusel de imagenes -->
 
                     <div class="container">
-                        <div class="col-12">
+                        <div class="col-12 p-0">
                             <!-- main slider carousel items -->
                             <section class="mt-3" id="slide-detalle">
                                 <?php
-                                                                    if (isset($r['fotos'])) {
-                                                                        for ($i = 0; $i < count($r['fotos']); $i++) {
-                                                                            echo '<div class="contenedor-img">
+                                if (isset($r['fotos'])) {
+                                    for ($i = 0; $i < count($r['fotos']); $i++) {
+                                        echo '<div class="contenedor-img">
                                         <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
                                     </div>';
-                                                                        }
-                                                                    } else {
-                                                                        echo  '<div class="contenedor-img">
+                                    }
+                                } else {
+                                    echo  '<div class="contenedor-img">
                                         <img src="images/no_image.png" alt="">
                                     </div>';
-                                                                    }
+                                }
                                 ?>
                             </section>
                             <section class="vertical-center-4 slider" id="miniaturas">
                                 <?php
-                                                                    if (isset($r['fotos'])) {
-                                                                        for ($i = 0; $i < count($r['fotos']); $i++) {
-                                                                            echo '<div class="contenedor-img">
+                                if (isset($r['fotos'])) {
+                                    for ($i = 0; $i < count($r['fotos']); $i++) {
+                                        echo '<div class="contenedor-img">
                                         <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
                                     </div>';
-                                                                        }
-                                                                    } else {
-                                                                        echo  '<div class="contenedor-img">
+                                    }
+                                } else {
+                                    echo  '<div class="contenedor-img">
                                         <img src="images/no_image.png" alt="">
                                     </div>';
-                                                                    }
+                                }
                                 ?>
                             </section>
                         </div>
@@ -127,17 +127,17 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                             <div class="row">
 
-                                <div class="col-6">
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
 
                                     <h3> <?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?> </h3>
                                     <h5 class="font-weight-bold color_azul"> PRECIO:
                                         <?php if ($r['Gestion'] == 'Arriendo') {
-                                                                        echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
-                                                                    } else if ($r['Gestion'] == 'Venta') {
-                                                                        echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
-                                                                    } else {
-                                                                        echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
-                                                                    }
+                                            echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                                        } else if ($r['Gestion'] == 'Venta') {
+                                            echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                                        } else {
+                                            echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                                        }
                                         ?>
                                         </p>
                                     </h5>
@@ -180,7 +180,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                                 </div>
 
-                                <div class="col-6 row align-items-center justify-content-center">
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6 m-0 row align-items-center justify-content-center">
 
                                     <div class="d-flex align-items-baseline">
 
@@ -218,23 +218,23 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                                     <div class="row my-3 justify-content-between">
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
+                                        <button class="mb-1 mb-md-0 mb-lg-0 mb-xl-0 col-12-responsive rounded botones color_boton collapsed" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
                                             Descripción
                                         </button>
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#dos" aria-expanded="false" aria-controls="collapseExample">
+                                        <button class="mb-1 mb-md-0 mb-lg-0 mb-xl-0 col-12-responsive rounded botones color_boton collapsed" data-toggle="collapse" data-target="#dos" aria-expanded="false" aria-controls="collapseExample">
                                             Características Internas
                                         </button>
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#tres" aria-expanded="false" aria-controls="collapseExample">
+                                        <button class="mb-1 mb-md-0 mb-lg-0 mb-xl-0 col-12-responsive rounded botones color_boton collapsed" data-toggle="collapse" data-target="#tres" aria-expanded="false" aria-controls="collapseExample">
                                             Características Externas
                                         </button>
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#cuatro" aria-expanded="false" aria-controls="collapseExample">
+                                        <button class="mb-1 mb-md-0 mb-lg-0 mb-xl-0 col-12-responsive rounded botones color_boton collapsed" data-toggle="collapse" data-target="#cuatro" aria-expanded="false" aria-controls="collapseExample">
                                             Características Alrededores
                                         </button>
 
-                                        <button class="rounded botones color_boton collapsed" data-toggle="collapse" data-target="#cinco" aria-expanded="false" aria-controls="collapseExample">
+                                        <button class="mb-1 mb-md-0 mb-lg-0 mb-xl-0 col-12-responsive rounded botones color_boton collapsed" data-toggle="collapse" data-target="#cinco" aria-expanded="false" aria-controls="collapseExample">
                                             Video
                                         </button>
 
@@ -256,19 +256,19 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <div id="dos" class="collapse" aria-labelledby="dos" data-parent="#accordion">
 
                                             <?php
-                                                                                                                                                                                                        if (count($r['caracteristicasInternas']) > 0) {
-                                                                                                                                                                                                            echo
-                                                                                                                                                                                                                '<div class="col-md-12" style="margin-bottom: 12px;">
+                                            if (count($r['caracteristicasInternas']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
                                                       <h2 class="property-single-detail-title"><strong>Características Internas</strong></h2>
                                                         <ul>';
-                                                                                                                                                                                                            for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
-                                                                                                                                                                                                                $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
-                                                                                                                                                                                                                echo '<li>' . $caracteristicas . '</li>';
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            echo  '</ul>
+                                                for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
                                                  </div>
                                                          ';
-                                                                                                                                                                                                        }
+                                            }
                                             ?>
 
                                         </div>
@@ -276,19 +276,19 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <div id="tres" class="collapse" aria-labelledby="tres" data-parent="#accordion">
 
                                             <?php
-                                                                                                                                                                                                        if (count($r['caracteristicasExternas']) > 0) {
-                                                                                                                                                                                                            echo
-                                                                                                                                                                                                                '<div class="col-md-12" style="margin-bottom: 12px;">
+                                            if (count($r['caracteristicasExternas']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
                                                         <h2 class="property-single-detail-title"><strong>Características Externas</strong></h2>
                                                               <ul>';
-                                                                                                                                                                                                            for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
-                                                                                                                                                                                                                $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
-                                                                                                                                                                                                                echo '<li>' . $caracteristicas . '</li>';
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            echo  '</ul>
+                                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
                                                              </div>
                                                                      ';
-                                                                                                                                                                                                        }
+                                            }
                                             ?>
 
                                         </div>
@@ -296,19 +296,19 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <div id="cuatro" class="collapse" aria-labelledby="cuatro" data-parent="#accordion">
 
                                             <?php
-                                                                                                                                                                                                        if (count($r['caracteristicasAlrededores']) > 0) {
-                                                                                                                                                                                                            echo
-                                                                                                                                                                                                                '<div class="col-md-12" style="margin-bottom: 12px;">
+                                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                                echo
+                                                    '<div class="col-md-12" style="margin-bottom: 12px;">
                                                       <h2 class="property-single-detail-title"><strong>Características de los alrededores</strong></h2>
                                                                   <ul>';
-                                                                                                                                                                                                            for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                                                                                                                                                                                                $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                                                                                                                                                                                                echo '<li>' . $caracteristicas . '</li>';
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            echo  '</ul>
+                                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                                    echo '<li>' . $caracteristicas . '</li>';
+                                                }
+                                                echo  '</ul>
                                                        </div>
                                                                   ';
-                                                                                                                                                                                                        }
+                                            }
                                             ?>
 
                                         </div>
@@ -316,20 +316,19 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <div id="cinco" class="collapse" aria-labelledby="cinco" data-parent="#accordion">
 
                                             <?php if ($r['video'] != "") {
-                                                                                                                                                                                                            echo
-                                                                                                                                                                                                                ' <h2 class="property-single-detail-title">Video</h2>
+                                                echo
+                                                    ' <h2 class="property-single-detail-title">Video</h2>
                                                             <div class="card">
                                                               <div class="card-body">
-                                                                  <h5 class="card-title">Video</h5>
                                                                  <div class="row">
-                                                        <div class="col-12 col-md-4">
-                                                            <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        <div class="col-12">
+                                                            <iframe class="w-100 video_tamaño" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                           </div>
                                                           </div>
                                                          </div>
                                                          </div>
                                                        ';
-                                                                                                                                                                                                        } ?>
+                                            } ?>
 
                                         </div>
 
@@ -361,16 +360,16 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
                 </section>
 
-                <section id="seccion_derecha" class="col-4 justify-content-center">
+                <section id="seccion_derecha" class="col-12 col-lg-4 col-xl-4 justify-content-center">
 
                     <!-- Inicio contacto con el asesor -->
                     <div id="contacto_asesor">
                         <h2 class="my-3 text-center"> Contacto con el asesor </h2>
 
-                        <div class="imagen_asesor row justify-content-center"> <img src="<?php echo $asesor['FotoAsesor']; ?>" alt=""> </div>
+                        <div class="container-fluid imagen_asesor row justify-content-center"> <img src="<?php echo $asesor['FotoAsesor']; ?>" alt=""> </div>
                         <p class="mt-3 col-12"><i class="fas fa-user mr-2"><span> <?php echo $asesor['ntercero']; ?></span></i></p>
                         <p class="col-12"><i class="fas fa-mobile-alt mr-2"><span><a href="tel:+57<?php echo $asesor['celular']; ?>"> <?php echo $asesor['celular']; ?></a></span></i></p>
-                        <p class="col-12"><i class="fas fa-envelope mr-2"></i><span><a href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></span></p>
+                        <p class="col-12"><i class="fas fa-envelope mr-2"></i><span class="text-break"><a href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></span></p>
                     </div>
                     <!-- Fin contacto con el asesor -->
 

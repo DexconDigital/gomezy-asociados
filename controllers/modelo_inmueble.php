@@ -130,21 +130,22 @@ function modelo_inmueble_similare($r)
     $api = $r[$i];
 
     echo ' 
-            <div class="mb-3 col-12 border-top border-bottom mb-5 col-12 col-md-6 col-lg-4 col-xl-4 px-3">
-            <h5 class="text-center py-3 px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
-                            <a href="detalle_inmueble.php?co=' . $codigo . '" class="row align-items-center">
+            <div class="mb-3 col-12 border-top border-bottom mb-5 col-12 px-3">
+                <a href="detalle_inmueble.php?co=' . $codigo . '" class="row align-items-center">
+                    <h5 class="col-12 m-0 text-center py-3 px-3 card-title">' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </h5>
                             
-                                <div class="col-12 mb-3">
-                                    <img style="width:100%;" src="'. $imagen . '" alt="">
+                            
+                                <div class="col-12 d-flex align-items-center justify-content-center mb-3">
+                                    <img src="'. $imagen . '" alt="">
                                 </div>
-                            </a>
+                            
 
                            
                             
-                            <li class="justify-content-center align-items-baseline d-flex m-0 ml-3"> <i style="color:#0089CF;" class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
-                            <div class="col-12 text-center">
+                            <li class="col-12 justify-content-center align-items-baseline d-flex m-0"> <i style="color:#0089CF;" class="direccion fas fa-map-marker-alt"></i> <p class="ml-2"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p> </li>
+                            <div class="col-12 text-center d-flex flex-column align-items-center">
 
-                                <ul class="lista_simislares">
+                                <ul class="lista_simislares p-0">
                                     <li>
                                         <i class="fas fa-chart-area"></i>
                                         <p class="d-inline">' . $api['AreaConstruida'] . 'm<sup>2</p>
@@ -168,6 +169,7 @@ function modelo_inmueble_similare($r)
                                 <p class="ml-3 text-muted"> Código : '. $codigo .' </p>
                                 
                             </div>
+                            </a>
                         </div>
 ';
   }

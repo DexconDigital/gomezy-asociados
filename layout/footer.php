@@ -61,8 +61,8 @@
 
 <section class="borde">
 
-    <p class="py-3 text-center">
-        Diseñado y Desarrollado por <a href="www.dexcondigital.com">Dexcon Digital</a> ©Copyright 2019 para
+    <p class="m-0 py-3 text-center">
+        Diseñado y Desarrollado por <a href="www.dexcondigital.com">Dexcon Digital</a> ©Copyright 2020 para
         Inmobiliaria Gómez y Asociados. <span>Todos los derechos reservados.</span>
     </p>
 
