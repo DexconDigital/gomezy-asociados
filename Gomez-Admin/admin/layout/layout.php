@@ -40,7 +40,7 @@ $page = "inicio";
         }
 
         .fas {
-            color: #B58D10;
+            color: #0089CF;
         }
 
         .far {
@@ -48,7 +48,7 @@ $page = "inicio";
         }
 
         .fondo_imagen {
-            background-image: url("../../images/banner_blog.png");
+            background-image: url("../../images/custom1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -63,10 +63,10 @@ $page = "inicio";
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <nav class="estilo_nav navbar navbar-expand static-top">
 
-        <a class="navbar-brand mr-1" href="index.php">
-            <img src="images/isotipo-4.png" class="img-fluid">
+        <a class="navbar-brand mr-1" href="../../index.php">
+            <img src="images/logo.png" style="width:300px; height:100px" class="img-fluid">
         </a>
 
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0" style="margin-left: -10%;" id="sidebarToggle" href="#">
@@ -80,7 +80,7 @@ $page = "inicio";
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="sidebar navbar-nav bg-dark">
+        <ul class="sidebar navbar-nav slide_estilo">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -109,7 +109,7 @@ $page = "inicio";
             </li>
         </ul>
 
-        <div id="content-wrapper" style="background: #c8cfda21;position: relative;">
+        <div id="content-wrapper">
            
 
     

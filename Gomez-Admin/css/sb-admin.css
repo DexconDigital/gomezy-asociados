@@ -10395,7 +10395,7 @@ body {
 #wrapper #content-wrapper {
   overflow-x: hidden;
   width: 100%;
-  padding-bottom: 80px;
+  padding: 20px 0 20px 0;
 }
 
 
@@ -10504,6 +10504,12 @@ body {
 .sidebar .nav-item .nav-link span {
   font-size: 0.65rem;
   display: block;
+  color: black;
+}
+
+.sidebar .nav-item .nav-link span:hover {
+  transition: all 150ms ease-in-out;
+  color: #09428E;
 }
 
 .sidebar .nav-item .dropdown-menu {
@@ -10550,6 +10556,7 @@ body {
   .sidebar .nav-item .nav-link span {
     font-size: 1rem;
     display: inline;
+    color: black;
   }
   .sidebar .nav-item .dropdown-menu {
     position: static !important;

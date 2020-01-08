@@ -1,9 +1,22 @@
-.bg-dark{
-    background-color: #002230  !important;
+.estilo_nav{
+    background-color: white  !important;
+    box-shadow: 0 1px 12px #0089CF;
+    z-index: 1;
 }
+
+.slide_estilo {
+    background-color: white;
+    border-right: 1px solid black;
+}
+
+
 .img_container_admin{
     object-fit: contain;
     height: 90%;
     width: 90%;
     width:300px; height:auto;
+}
+
+li a:hover {
+    color: red;
 }

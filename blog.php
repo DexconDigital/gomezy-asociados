@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/noticiasController.php';
 $page = 'Blog';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -26,9 +27,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <section id="banner" class="position-relative">
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
-        <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
-                <h1 class="font-weight-bold" > BLOG </h1>
-                <h5 class="justify-content-center row">  Inicio / Blog  </h5>
+            <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
+                <h1 class="font-weight-bold"> BLOG </h1>
+                <h5 class="justify-content-center row"> Inicio / Blog </h5>
             </div>
             <div>
                 <img src="images/banner_blog.png" alt="">
@@ -36,10 +37,30 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         </div>
     </section>
 
-    <section id="blog">
+    <section id="ultimas_noticias" class="mb-5">
+        <div class="container espacio_margen">
+            <div class="col-12 mb-5">
+                <h2 class="main-title text-left letra_titulo"> Informativo Inmobiliario </h2>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="row">
+                    <?php if (isset($noticias_array)) {
+                        modelo_noticias($noticias_array);
+                    } else {
+                        echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--     <section id="blog">
         <div class="container">
 
-        <h2 class="font-weight-bold text-center my-5"> Últimas Noticias </h2>
+            <h2 class="font-weight-bold text-center my-5"> Últimas Noticias </h2>
             <div class="col-12">
                 <div class="row justify-content-center">
 
@@ -125,7 +146,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
 

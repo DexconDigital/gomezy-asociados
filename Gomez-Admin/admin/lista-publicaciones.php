@@ -14,19 +14,19 @@ $sql = mysqli_query($con, $qry);
   }
   .color_cancelar{
     color: white;
-    background-color: #002230;
+    background-color: #09428E;
     
   }
   .color_cancelar:hover{
-    background-color: #B58D10;
+    background-color: #0089CF;
     color: white;
   }
   .color_aceptar{
-    background-color: #B58D10;
+    background-color: #09428E;
         color: white;
   }
   .color_aceptar:hover{
-    background-color: #002230;
+    background-color:  #0089CF;
     color: white;
   }
 </style>
@@ -51,8 +51,8 @@ $sql = mysqli_query($con, $qry);
             echo '<tr>
                                 <td>' . $res["id"] . '</td>
                                 <td>' . $res["nombre"] . '</td>
-                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:#B58D10;" class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-href="eliminar.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #B58D10;"class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:#0089CF;" class="fas fa-edit"></i></a></td>
+                                <td><a href="#" data-href="eliminar.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #808285;"class="fas fa-trash-alt"></i></a></td>
                         </tr>';
           }
           ?>

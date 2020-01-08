@@ -7,7 +7,7 @@ $con=conect();
 
 $nombre=$_REQUEST["user"];
 $password=$_REQUEST["pass"];
-$id_inmobiliaria = 12;
+$id_inmobiliaria = 13;
 
 $qry="SELECT * FROM usuarios WHERE usuario ='$nombre' and password ='$password' and id_inmobiliaria1 = '$id_inmobiliaria'";
 $sql=mysqli_query($con,$qry);

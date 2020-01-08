@@ -2,6 +2,7 @@
 
 require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/noticiasController.php';
 $page = 'Inicio';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -17,7 +18,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 </head>
 
 <body>
-    
+
     <!-- definir estilo menu, true= transparente false= blanco  -->
     <script>
         var isTransparent = true;
@@ -220,57 +221,26 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
         </section>
 
-        <section id="blog">
-            <div class="container">
-
-                <h2 class="font-weight-bold text-center my-5"> Últimas Noticias </h2>
+        <section id="ultimas_noticias" class="mb-5">
+            <div class="container espacio_margen">
+                <div class="col-12 mb-5">
+                    <h2 class="main-title text-left letra_titulo"> Informativo Inmobiliario </h2>
+                </div>
                 <div class="col-12">
                     <div class="row justify-content-center">
-
-                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
-                            <div class="card" style="width:100%;">
-                                <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="color_titulo">Últimas Ofertas</h4>
-                                    <p class="card-text">2019-11-30</p>
-                                    <p class="card-text">Carta de presentación</p>
-                                    <hr>
-                                    <a href="#" class="btn boton_ver_mas rounded">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
-                            <div class="card" style="width:100%;">
-                                <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="color_titulo">Últimas Ofertas</h4>
-                                    <p class="card-text">2019-11-30</p>
-                                    <p class="card-text">Carta de presentación</p>
-                                    <hr>
-                                    <a href="#" class="btn boton_ver_mas rounded">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-5 col-12 col-md-6 col-lg-4 col-xl-4">
-                            <div class="card" style="width:100%;">
-                                <img style="object-fit: cover;width: 100%;height: 255px;" src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="color_titulo">Últimas Ofertas</h4>
-                                    <p class="card-text">2019-11-30</p>
-                                    <p class="card-text">Carta de presentación</p>
-                                    <hr>
-                                    <a href="#" class="btn boton_ver_mas rounded">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-
-
+                        <?php if (isset($noticias_array)) {
+                            modelo_ultima_noticia($noticias_array);
+                        } else {
+                            echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section id="aliados" class="mb-5">
             <div class="container">
