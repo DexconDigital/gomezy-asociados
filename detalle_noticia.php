@@ -45,7 +45,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
             <div class="col-12 text-center mb-4">
                 <h2><?php echo $nombre ?></h2>
             </div>
-            <div class="col-12">
+            <div class="col-12 text-break">
                 <div class="img_responsive_contacto col-12">
                     <img src="<?php echo $ruta_imagen ?>" alt="" class="h-100 w-100">
                 </div>
