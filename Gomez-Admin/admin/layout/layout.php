@@ -48,7 +48,7 @@ $page = "inicio";
         }
 
         .fondo_imagen {
-            background-image: url("../../images/custom1.jpg");
+            background-image: url("../../images/background_admin_noticias.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
