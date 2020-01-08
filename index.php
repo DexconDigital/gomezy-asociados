@@ -261,7 +261,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-5 col-xg-7">
-                        <img style="width:40%" src="images/fenalco.png" alt="">
+                        <img style="margin-top: 20px; width:30%" src="images/fenalco.png" alt="">
                     </div>
 
                     <div class="berkley d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-8 col-lg-7 col-xg-7">

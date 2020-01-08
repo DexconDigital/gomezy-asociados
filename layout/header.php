@@ -85,7 +85,7 @@
                     </a>
 
                     <a target="_blank" href="<?php echo $redes_sociales['youtube']['link'] ?>">
-                        <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-4 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
+                        <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 mr-md-2 mr-lg-4 mr-xl-4 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['youtube']['icono'] ?>"></i> </div>
                     </a>
                     
                 </div>

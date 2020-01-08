@@ -8473,12 +8473,11 @@ header .header_nav2 {
         transform: scale(1.1); }
   #contenido_pagina_principal #aliados img {
     width: 60%;
-    height: 100%; }
+    height: 100%;
+    margin: 15px 0 15px 0; }
   @media (max-width: 425px) {
-    #contenido_pagina_principal #aliados .berkley {
-      margin-top: 58px; }
-      #contenido_pagina_principal #aliados .berkley img {
-        width: 90%; } }
+    #contenido_pagina_principal #aliados .berkley img {
+      width: 90%; } }
 
 footer {
   background-color: #4C555A;
