@@ -2,7 +2,7 @@
     require_once('controllers/conexion.php');
     
     $codigo = 0;
-    // $codigo = $_GET['co'];
+    $codigo = $_GET['co'];
 
     $link = Conect();
 
@@ -19,6 +19,6 @@
     }
     $comparador='./Gomez-Admin/admin/';
     $ruta_imagen='./Gomez-Admin/admin/'.$imagen;
-    // $ruta_archivo= $comparador.$archivo;
+    $ruta_archivo= $comparador.$archivo;
 
 ?>  

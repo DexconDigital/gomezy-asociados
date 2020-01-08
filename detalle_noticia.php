@@ -30,7 +30,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="align-items-center d-flex justify-content-center" style="color: white;">
             <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
                 <h1 class="font-weight-bold"> Detalle de Noticia </h1>
-                <h5 class="col-12 justify-content-center row"> Inicio / Deetalle de Noticia </h5>
+                <h5 class="col-12 justify-content-center row"> Inicio / Noticias / Detalle de Noticia </h5>
             </div>
             <div>
                 <img src="images/detalle_banner_inmueble.png" alt="">
@@ -46,8 +46,10 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <h2><?php echo $nombre ?></h2>
             </div>
             <div class="col-12">
-                <img style="object-fit: contain ;width: 50%;height: 50%;" src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid-top float-left mr-4">
-                <p class="text-justify"> <?php echo $noticia ?></p>
+                <div class="img_responsive_contacto col-12">
+                    <img src="<?php echo $ruta_imagen ?>" alt="" class="h-100 w-100">
+                </div>
+                <p> <?php echo $noticia ?></p>
             </div>
         </div>
         <div class="container col-10 text-center mb-4 ">

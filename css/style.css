@@ -8852,3 +8852,19 @@ footer {
 @media (max-width: 767px) {
   #contenido_detalle_inmueble .video_tamaño {
     height: 200px; } }
+
+.img_responsive_contacto {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-bottom: 0; }
+
+@media (max-width: 767px) {
+  .img_responsive_contacto {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 160px;
+    display: inline-block; }
+    .img_responsive_contacto img {
+      height: 100%;
+      width: 100%; } }

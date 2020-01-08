@@ -12,6 +12,7 @@ include 'layout/layout.php';
 
     .color_boton:hover {
         color: white;
+        background-color: #0089CF;
     }
 
     .conct_botton {
@@ -26,7 +27,7 @@ include 'layout/layout.php';
     input[type]:focus {
         border-color: #09428E !important;
 
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #09428E !important;
+        box-shadow: 0 1px 1px #0089CF inset, 0 0 8px #09428E !important;
 
         outline: 0 none;
     }

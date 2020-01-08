@@ -4,7 +4,7 @@ require_once("conexion.php");
 include 'layout/layout.php';
 ?>
 
-<div class="fondo_imagen">
+<div style="z-index:-1" class="fondo_imagen">
 
 </div>
 

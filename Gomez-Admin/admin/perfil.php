@@ -11,15 +11,15 @@ $usuario =  mysqli_fetch_array($sql);
 
 <style>
     input[type]:focus {
-        border-color:  #B58D10!important;
+        border-color:  #09428E!important;
          
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px  #B58D10!important;
+        box-shadow: 0 1px 1px #0089CF inset, 0 0 8px  #09428E!important;
          
         outline: 0 none;
     }
 
     .color_boton {
-        background-color:  #B58D10;
+        background-color:  #09428E;
         color: white;
 
     }
@@ -29,18 +29,21 @@ $usuario =  mysqli_fetch_array($sql);
 
     .color_boton:hover {
         color: white;
+        background-color: #0089CF;
     }
 
     .conct_botton{
     text-align: center;
     }
     .cancelar{
-        background-color: #002230 ;
+        background-color: #09428E ;
         color: white;
         
     }
     .cancelar:hover{
         color: white;
+        background-color: #0089CF;
+        
     }
 }
 </style>

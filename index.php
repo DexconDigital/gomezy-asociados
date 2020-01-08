@@ -224,7 +224,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <section id="ultimas_noticias" class="mb-5">
             <div class="container espacio_margen">
                 <div class="col-12 mb-5">
-                    <h2 class="main-title text-left letra_titulo"> Informativo Inmobiliario </h2>
+                    <h2 class="py-5 font-weight-bold text-center"> Últimas Noticias </h2>
                 </div>
                 <div class="col-12">
                     <div class="row justify-content-center">
