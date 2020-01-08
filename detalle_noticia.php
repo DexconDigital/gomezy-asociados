@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-require_once('controllers/detalle_noticiasController.php');
+require_once('controllers/detalle_noticiasController.php'); 
 $page = 'Noticias';
 $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
@@ -70,9 +70,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
 
     <footer>
-
         <?php include 'layout/footer.php' ?>
-
     </footer>
 
     <?php include 'layout/archivosfooter.php'; ?>

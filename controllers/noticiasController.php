@@ -63,7 +63,7 @@ function modelo_ultima_noticia($r)
                            <p class="card-text">' . $r[$i]['fecha'] . '</p>
                            <p class="card-text">' . $descrip . '</p>
                            <hr>
-                           <a href="./detalle-noticia.php?co=' . $r[$i]['id'] . '" class="btn boton_ver_mas rounded">Ver Más</a>
+                           <a href="detalle_noticia.php?co=' . $r[$i]['id'] . '" class="btn boton_ver_mas rounded">Ver Más</a>
                        </div>
                    </div>
                </div> ';
@@ -83,7 +83,7 @@ function modelo_ultima_noticia($r)
                             <p class="card-text">' . $r[$i]['fecha'] . '</p>
                             <p class="card-text">'.$r[$i]['descripcion'].'</p>
                             <hr>
-                            <a href="./detalle-noticia.php?co=' . $r[$i]['id'] . '" class="btn boton_ver_mas rounded">Ver Más</a>
+                            <a href="detalle_noticia.php?co=' . $r[$i]['id'] . '" class="btn boton_ver_mas rounded">Ver Más</a>
                         </div>
                     </div>
                 </div> ';
