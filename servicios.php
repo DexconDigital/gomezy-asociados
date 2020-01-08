@@ -47,7 +47,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <div class="col-12 borde mt-3 position-relative">
                     <div class="position-absolute ancla" id="arrendamientos"></div>
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
                             <h2 class="text-center"><?php echo $texto_servicios['arrendamientos']['titulo']  ?> </h2>
                             <div class="col-12 mt-3 text-center">
                                 <span><i class="<?php echo $iconos_servicios['arrendamientos'] ?>"></i></span>
@@ -66,7 +66,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
                             <p class="text-justify"><?php echo   $texto_servicios['ventas']['parrafo']  ?> </p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-2 order-lg-2 order-xl-2 p-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-2 order-lg-2 order-xl-2 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
                             <h2 id="ventas" class="text-center"><?php echo $texto_servicios['ventas']['titulo']  ?> </h2>
                             <div class="col-12 mt-3  text-center">
                                 <span><i class="<?php echo $iconos_servicios['ventas'] ?>"></i></span>
@@ -74,96 +74,100 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Avaluos -->
-            <div class="col-12 borde mt-3 position-relative">
-                <div class="position-absolute ancla" id="avaluos"></div>
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-3">
-                        <h2 id="avaluos" class="text-center"><?php echo $texto_servicios['avaluos']['titulo']  ?> </h2>
-                        <div class="col-12 mt-3  text-center">
-                            <span><i class="<?php echo $iconos_servicios['avaluos'] ?>"></i></span>
+
+                <!-- Avaluos -->
+                <div class="col-12 borde mt-3 position-relative">
+                    <div class="position-absolute ancla" id="avaluos"></div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
+                            <h2 id="avaluos" class="text-center"><?php echo $texto_servicios['avaluos']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3  text-center">
+                                <span><i class="<?php echo $iconos_servicios['avaluos'] ?>"></i></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
-                        <p class="text-justify"><?php echo   $texto_servicios['avaluos']['parrafo']  ?> </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Matenimiento -->
-            <div class="col-12 borde mt-3 position-relative">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
-                        <p class="text-justify"><?php echo   $texto_servicios['mantenimientos']['parrafo']  ?> </p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 p-3">
-                        <h2 class="text-center"><?php echo $texto_servicios['mantenimientos']['titulo']  ?> </h2>
-                        <div class="col-12 mt-3   text-center">
-                            <span><i class="<?php echo $iconos_servicios['mantenimiento'] ?>"></i></span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Asesorias -->
-            <div class="col-12 borde mt-3 position-relative">
-                <div class="position-absolute ancla" id="asesoria"></div>
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4 ">
-                        <h2 id="asesoria" class="text-center"><?php echo $texto_servicios['asesoria']['titulo']  ?> </h2>
-                        <div class="col-12 mt-3 text-center">
-                            <span><i class="<?php echo $iconos_servicios['asesoria'] ?>"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
-                        <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][0]  ?> </p>
-                        <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][1]  ?> </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Administracion -->
-            <div class="col-12 borde mt-3 position-relative">
-                <div class="position-absolute ancla" id="administracion"></div>
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
-                        <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][0]  ?> </p>
-                        <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][1]  ?> </p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 p-5">
-                        <h2 id="administracion" class="text-center"><?php echo $texto_servicios['administracion']['titulo']  ?> </h2>
-                        <div class="col-12 mt-3 text-center">
-                            <span><i class="<?php echo $iconos_servicios['administracion'] ?>"></i></span>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
+                            <p class="text-justify"><?php echo   $texto_servicios['avaluos']['parrafo']  ?> </p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- inversiones -->
-            <div class="col-12 borde mt-3 position-relative">
-                <div class="position-absolute ancla" id="inversiones"></div>
-                <div class="row align-items-center">
-
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
-                        <h2 id="inversiones" class="text-center"><?php echo $texto_servicios['inversiones']['titulo']  ?> </h2>
-                        <div class="col-12 mt-3  text-center">
-                            <span><i class="<?php echo $iconos_servicios['inversiones'] ?>"></i></span>
+                <!-- Matenimiento -->
+                <div class="col-12 borde mt-3 position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
+                            <p class="text-justify"><?php echo   $texto_servicios['mantenimientos']['parrafo']  ?> </p>
                         </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
+                            <h2 class="text-center"><?php echo $texto_servicios['mantenimientos']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3   text-center">
+                                <span><i class="<?php echo $iconos_servicios['mantenimiento'] ?>"></i></span>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-2 mt-3">
-                        <p class="text-justify p-4"><?php echo   $texto_servicios['inversiones']['parrafos'][0]  ?> </p>
-                    </div>
-                    <div class="mb-3 col-12">
-                        <p class="text-justify p-4"><?php echo   $texto_servicios['inversiones']['parrafos'][1]  ?> </p>
-                        <div class="row">
-                            <p class="order-2 col-12 text-justify p-4"> <?php echo $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
-                            <div class="order-1 col-12 row align-items-center justify-content-center m-0"><img src="images/gomez_y_loaiza.png" alt=""></div>
+                </div>
+
+                <!-- Asesorias -->
+                <div class="col-12 borde mt-3 position-relative">
+                    <div class="position-absolute ancla" id="asesoria"></div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4 mt-md-0 mt-lg-0 mt-mt-xl-0">
+                            <h2 id="asesoria" class="text-center"><?php echo $texto_servicios['asesoria']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3 text-center">
+                                <span><i class="<?php echo $iconos_servicios['asesoria'] ?>"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4">
+                            <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][0]  ?> </p>
+                            <p class="text-justify"><?php echo   $texto_servicios['asesoria']['parrafos'][1]  ?> </p>
                         </div>
                     </div>
                 </div>
+                <!-- Administracion -->
+                <div class="col-12 borde mt-3 position-relative">
+                    <div class="position-absolute ancla" id="administracion"></div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2 order-md-1 order-lg-1 order-xl-1 p-4">
+                            <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][0]  ?> </p>
+                            <p class="text-justify"><?php echo   $texto_servicios['administracion']['parrafos'][1]  ?> </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-1 order-xl-1 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
+                            <h2 id="administracion" class="text-center"><?php echo $texto_servicios['administracion']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3 text-center">
+                                <span><i class="<?php echo $iconos_servicios['administracion'] ?>"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inversiones -->
+                <div class="col-12 borde mt-3 position-relative">
+                    <div class="position-absolute ancla" id="inversiones"></div>
+                    <div class="row align-items-center">
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
+                            <h2 id="inversiones" class="text-center"><?php echo $texto_servicios['inversiones']['titulo']  ?> </h2>
+                            <div class="col-12 mt-3  text-center">
+                                <span><i class="<?php echo $iconos_servicios['inversiones'] ?>"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-4 mt-3">
+                            <p class="text-justify"><?php echo   $texto_servicios['inversiones']['parrafos'][0]  ?> </p>
+                        </div>
+                        <div class="mb-3 col-12 p-0">
+                            <p class="text-justify p-4"><?php echo   $texto_servicios['inversiones']['parrafos'][1]  ?> </p>
+                            <div class="row px-4">
+                                <p class="order-2 col-12 text-justify pt-4 mt-3"> <?php echo $texto_servicios['inversiones']['parrafos'][2]  ?> </p>
+                                <div class="order-1 col-12 row align-items-center justify-content-center m-0"><img src="images/gomez_y_loaiza.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
 
         </div>
 

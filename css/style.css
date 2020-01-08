@@ -1597,7 +1597,7 @@ pre {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: black;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1623,16 +1623,16 @@ pre {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #6c757d;
+    color: black;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #6c757d;
+    color: black;
     opacity: 1; }
   .form-control::-ms-input-placeholder {
-    color: #6c757d;
+    color: black;
     opacity: 1; }
   .form-control::placeholder {
-    color: #6c757d;
+    color: black;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -8177,6 +8177,23 @@ body {
 
 .card-max-height img {
   height: 260px; }
+
+.input_responsive input {
+  width: 15rem; }
+
+.input_responsive select {
+  width: 15rem; }
+
+.input_responsive button {
+  width: 15rem; }
+
+@media (max-width: 600px) {
+  .input_responsive input {
+    width: 100% !important; }
+  .input_responsive select {
+    width: 100% !important; }
+  .input_responsive button {
+    width: 100% !important; } }
 
 p {
   font-family: "corbel";

@@ -22,6 +22,37 @@ body  {
     }
 }
 
+.input_responsive { 
+    input {
+        width:15rem;
+    }
+
+    select {
+        width:15rem;
+    }
+
+    button {
+        width:15rem;
+    }
+
+}
+
+@media (max-width:600px) {
+    .input_responsive { 
+        input {
+            width:100%!important;
+        }
+
+        select {
+            width:100%!important;
+        }
+
+        button {
+            width:100%!important;
+        }
+    }
+}
+
 p {
     font-family: "corbel";
     font-weight: 400;

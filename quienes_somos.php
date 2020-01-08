@@ -48,13 +48,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <div class="mb-4 mb-md-0 mb-lg-0 mg-xl-0 col-12 col-md-6 col-lg-6 col-xl-6">
                             <img src="images/edificio.png" alt="">
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-6  text-center">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6  text-center d-flex flex-column">
                             <h2 class="mb-4"><?php echo $texto_quienes_somos['quienes_somos']['titulo']  ?></h2>
-                            <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
-                            <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?></p>
-                            <p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?></p>
+                            <div class="order-1 order-md-1 order-lg-1 order-xl-1 "><p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p></div>
+                            <div class="order-2 order-md-2 order-lg-2 order-xl-2 "><p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?></p></div>
+                            <div class="order-4 order-md-3 order-lg-3 order-xl-3 "><p class="text-justify"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?></p></div>
                                 
-                            <div class="col-12 text-center norma_iso">
+                            <div class="order-3 order-md-4 order-lg-4 order-xl-4 text-center norma_iso">
                                 <div class="row">
 
                                     <div class="p-0 d-flex justify-content-end col-6 cont_iso">
@@ -68,7 +68,6 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <span style="font-family: ArialNarrow" ; class="etiqueta">SC4356-1</span>
                                     </div>
 
-                                    
                                 </div>
                             </div>
                         </div>

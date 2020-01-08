@@ -111,7 +111,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                 <ul class="align-items center navbar-nav mx-auto">
-                    <li class="align-items-center row mx-2 rounded nav-item <?php echo ($page == "Inicio") ? "active" : ""; ?>">
+                    <li class="align-items-center row mx-2 rounded nav-item mt-4 mt-lg-0 mt-xl-0 <?php echo ($page == "Inicio") ? "active" : ""; ?>">
                         <a class="nav-link" href="index.php">
                             <h5 class="m-0">Inicio</h5>
                         </a>
