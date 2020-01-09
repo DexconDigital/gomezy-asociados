@@ -53,6 +53,7 @@ $page = "inicio";
             background-size: cover;
             background-position: center;
             position: absolute;
+            z-index: -1;
             width: 100%;
             top: 0;
             bottom: 0;

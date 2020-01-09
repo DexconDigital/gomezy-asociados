@@ -97,7 +97,7 @@
 
     <div class="container p-0 py-1">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <a class="navbar-brand" href="index.php"><img class="ml-3 img_logo margen_pse" src="images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="index.php"><img class="ml-3 img_logo margen_pse" src="images/123.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,7 +105,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                 <ul class="align-items center navbar-nav mx-auto">
-                    <li class="align-items-center row mx-2 rounded nav-item <?php echo ($page == "Inicio") ? "active" : ""; ?>">
+                    <li class="align-items-center row mx-2 rounded nav-item mt-4 mt-lg-0 mt-xl-0 active <?php echo ($page == "Inicio") ? "active" : ""; ?>">
                         <a class="nav-link" href="index.php">
                             <h5 class="m-0">Inicio</h5>
                         </a>

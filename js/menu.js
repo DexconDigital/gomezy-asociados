@@ -8,7 +8,7 @@ const changesize = mql => {
             var altura = 100;
             $(window).scroll(function() {
                 if ($(this).scrollTop() > altura) {
-                    direccion = 'images/logo.png';
+                    direccion = 'images/123.png';
                     $("#imagen_menu").attr("src",direccion);
                     $('#menu').removeClass('bg-transparent');
                     $('#menu_contacto').removeClass('bg-transparent');
@@ -26,7 +26,7 @@ const changesize = mql => {
         }else{
             var espacio_menu = $('.total-menu').height();
             $('.espacio-menu').height(espacio_menu);
-            direccion ='images/logo.png';
+            direccion ='images/123.png';
             $("#imagen_menu").attr("src",direccion);
             $('#menu').removeClass('bg-transparent');
             $('#menu').removeClass('bg-transparent');
@@ -38,14 +38,14 @@ const changesize = mql => {
         if(isTransparent){
             var espacio_menu = $('.total-menu').height();
             $('.espacio-menu').height(espacio_menu);
-            direccion ='images/Logo.png';
+            direccion ='images/123.png';
             $("#imagen_menu").attr("src",direccion);
             $('#menu').removeClass('bg-transparent');
             $('#menu_contacto').removeClass('bg-transparent');
         }else{
             var espacio_menu = $('.total-menu').height();
             $('.espacio-menu').height(espacio_menu);
-            direccion ='images/Logo.png';
+            direccion ='images/123.png';
             $("#imagen_menu").attr("src",direccion);
             $('#menu_contacto').removeClass('bg-transparent');
             $('#menu').removeClass('bg-transparent');

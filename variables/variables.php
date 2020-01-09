@@ -5,7 +5,7 @@ $nombre_inmobiliaria = "Inmobiliaria Gómez y Asociados";
 //logo empresa
 $logo_empresa = [
 	$color =[
-		"src" => "images/logo.png",
+		"src" => "images/123.png",
 		"alt" => "Logo Inmobiliaria Gómez y Asociados"
 	],
 ];
