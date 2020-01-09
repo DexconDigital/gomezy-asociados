@@ -55,12 +55,12 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="container col-10 text-center mb-4 ">
             <div class="row">
 
-                <div class="col-4">
+                <div class="col-12">
 
                     <span class="text-muted"> Publicado el: <?php echo $fecha_complete; ?></span>
                 </div>
 
-                <div class="col-4">
+                <div class="col-12">
                     <?php if ($ruta_archivo != $comparador . "") {
                         echo '<a style="color:black;" href="' . $ruta_archivo . '" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
                     } ?>
