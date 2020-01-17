@@ -105,33 +105,35 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         Formulario de contacto
                     </h2>
                     <div class="col-12">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required>
+                        <form action="email/enviarCorreo.php" method="Post">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group text_Area">
-                                <textarea cols="10" rows="7" name="message" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
+                            <div class="col-md-12">
+                                <div class="form-group text_Area">
+                                    <textarea cols="10" rows="7" id="mensaje" name="mensaje" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="custom-control custom-checkbox mb-4">
-                                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy" required>
-                                <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_contacto" href="Politicas_de_seguridad.pdf" download="Politica de tratamiento de infromación.pdf"> política de tratamiento de datos personales.</a></label>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-checkbox mb-4">
+                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy" required>
+                                    <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_contacto" href="Politicas_de_seguridad.pdf" download="Politica de tratamiento de infromación.pdf"> política de tratamiento de datos personales.</a></label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group text-center">
-                                <button type="submit" class="btn rounded col-6 waves-effect waves-light color_boton_contacto p-2" name=""><span style="color:white">Enviar</span></button>
-                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn rounded col-6 waves-effect waves-light color_boton_contacto p-2" name=""><span style="color:white">Enviar</span></button>
+                                </div>
 
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- FORMULARIO DE CONTACTO -->

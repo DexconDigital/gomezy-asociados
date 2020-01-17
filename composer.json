@@ -1,5 +1,5 @@
 {
-    "name": "vemdor2/daniel",
+    "name": "vendor2/daniel",
     "authors": [
         {
             "name": "william solano",
@@ -7,6 +7,7 @@
         }
     ],
     "require": {
-        "jasongrimes/paginator": "~1.0"
+        "jasongrimes/paginator": "~1.0",
+        "phpmailer/phpmailer": "^6.1"
     }
 }

@@ -52,7 +52,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="container p-0">
             <div class="col-12">
                 <div class="row">
-
+                    <?php $totalinmuebles = 0;
+                    if (is_array($api)) {
+                        $totalinmuebles = $api['datosGrales']['totalInmuebles'];
+                    } ?>
+                    <div class="col-12 mb-4">
+                        <h4 class="titulo_totalinmuebles text-center">Se han encontrado <span class="color_dorado"><?php echo $totalinmuebles ?></span> inmuebles</h4>
+                    </div>
                     <!-- propiedades -->
                     <?php
                     if (is_array($api)) {
@@ -68,7 +74,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 </div>
             </div>
         </div>
-        
+
         <div class="col-12 text-center">
             <?php if (is_array($api)) : ?>
                 <ul class="pagination mt-4 align-items-end justify-content-center">

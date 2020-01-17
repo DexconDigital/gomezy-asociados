@@ -255,7 +255,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     <input type="number" placeholder="Valor" name="valor" class="form-control" requiered="">
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="number" placeholder="Área" name="area" class="form-control" requiered="">
+                                    <input type="text" placeholder="Área" name="area" class="form-control" requiered="">
                                 </div>
                                 <div class="form-group col-12">
                                     <input type="text" placeholder="Ciudad" name="ciudad" class="form-control" requiered="">
