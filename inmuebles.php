@@ -57,7 +57,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         $totalinmuebles = $api['datosGrales']['totalInmuebles'];
                     } ?>
                     <div class="col-12 mb-4">
-                        <h4 class="titulo_totalinmuebles text-center">Se han encontrado <span class="color_dorado"><?php echo $totalinmuebles ?></span> inmuebles</h4>
+                        <h4 class="titulo_totalinmuebles text-center">Se han encontrado <?php echo $totalinmuebles ?> inmuebles</h4>
                     </div>
                     <!-- propiedades -->
                     <?php
