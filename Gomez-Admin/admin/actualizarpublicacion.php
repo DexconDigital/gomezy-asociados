@@ -29,10 +29,10 @@ $res =  mysqli_fetch_array($sql);
     }
 
     input[type]:focus {
-        border-color: #B58D10!important;
-         
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10!important;
-         
+        border-color: #B58D10 !important;
+
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10 !important;
+
         outline: 0 none;
     }
 </style>
@@ -52,18 +52,6 @@ $res =  mysqli_fetch_array($sql);
                     <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion Corta</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="descripcion" id="descripcion" value="<?php echo $res[2]; ?>">
-                    </div>
-                </div>
-                <div class="form-group row mb-4 ">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Url del Video</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" name="url" id="url" value="<?php echo $res[7]; ?>">
-                    </div>
-                </div>
-                <div class="form-group row mb-4 ">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Instagram Url</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" name="insta_url" id="insta_url" value="<?php echo $res[8]; ?>">
                     </div>
                 </div>
                 <div class="form-group row">
