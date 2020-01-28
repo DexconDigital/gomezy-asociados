@@ -31,7 +31,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <h5 class="justify-content-center row"> Inicio / Quiénes somos </h5>
             </div>
             <div>
-                <img src="images/banner_quienes_somos.png" alt="">
+                <img src="images/banner_quienes_somos.jpg" alt="">
             </div>
         </div>
     </section>

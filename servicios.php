@@ -31,7 +31,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <h5 class="justify-content-center row"> Inicio / Servicios </h5>
             </div>
             <div>
-                <img src="images/banner_servicios.png" alt="">
+                <img src="images/banner_servicios.jpg" alt="">
             </div>
         </div>
     </section>
