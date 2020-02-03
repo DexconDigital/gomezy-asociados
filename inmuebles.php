@@ -34,7 +34,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                 <h5 class="justify-content-center row"> Inicio / Inmuebles </h5>
             </div>
             <div>
-                <img src="images/banner_inmuebles.jpg" alt="">
+                <img src="images/franjaInmuebles.png" alt="">
             </div>
         </div>
     </section>
@@ -52,13 +52,13 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <div class="container p-0">
             <div class="col-12">
                 <div class="row">
-                    <?php $totalinmuebles = 0;
+                    <!-- <?php $totalinmuebles = 0;
                     if (is_array($api)) {
                         $totalinmuebles = $api['datosGrales']['totalInmuebles'];
                     } ?>
                     <div class="col-12 mb-4">
                         <h4 class="titulo_totalinmuebles text-center">Se han encontrado <?php echo $totalinmuebles ?> inmuebles</h4>
-                    </div>
+                    </div> -->
                     <!-- propiedades -->
                     <?php
                     if (is_array($api)) {
