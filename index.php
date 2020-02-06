@@ -260,13 +260,22 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <img src="images/fgi.png" alt="">
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-5 col-xg-7">
+                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-xg-4">
                         <img style="margin-top: 20px; width:30%" src="images/fenalco.png" alt="">
                     </div>
 
-                    <div class="berkley d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-8 col-lg-7 col-xg-7">
+                    <div class="berkley d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-xg-4">
+                        <img src="images/logo_11.png" alt="">
+                    </div>
+
+                    <div class="berkley d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-xg-4">
+                        <img src="images/gomez_y_loaiza.png" alt="">
+                    </div>
+
+                    <div class="berkley d-flex align-items-center justify-content-center col-12">
                         <img src="images/logo_berkley.png" alt="">
                     </div>
+
                 </div>
 
             </div>
