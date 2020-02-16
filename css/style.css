@@ -8475,9 +8475,14 @@ header .header_nav2 {
     width: 60%;
     height: 100%;
     margin: 15px 0 15px 0; }
-  @media (max-width: 425px) {
-    #contenido_pagina_principal #aliados .berkley img {
-      width: 90%; } }
+
+@media (max-width: 425px) {
+  #aliados .berkley1 img {
+    height: 150px !important; }
+  #aliados .berkley img {
+    height: 60px !important; }
+  #aliados img {
+    height: 100px !important; } }
 
 footer {
   background-color: #4C555A;

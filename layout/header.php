@@ -1,5 +1,5 @@
 <!-- Codigo del preloader -->
-<style>
+<!-- <style>
     #wrap-preload {
         position: fixed;
         z-index: 10;
@@ -44,7 +44,7 @@
     window.addEventListener("load", function() {
         loader.style.visibility = "hidden";
     });
-</script>
+</script> -->
 <!-- Fin de codigo preloader -->
 <section class="header_iconos">
 
