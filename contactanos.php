@@ -171,7 +171,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 </a>
                             </div>
                             <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
-                                <a href="<?php echo $datos_contacto['correos']['servicios_publicos']['correo'] ?>">
+                                <a href="mailto: <?php echo $datos_contacto['correos']['servicios_publicos']['correo'] ?>">
                                     <img src="images/servicios_publicos.png" alt="" style="width: 50%; object-fit: contain;">
                                     <p class="texto_contacto">Servicios Publicos</p>
                                 </a>
