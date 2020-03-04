@@ -544,11 +544,17 @@ header {
 
 }
 
-@media (max-width:425px) {
+@media (max-width:430px) {
 
     
 
     #aliados {
+
+        .fgi {
+            img {
+                height: inherit!important;
+            }
+        }
         
         .berkley1 {
             
@@ -562,6 +568,7 @@ header {
             
             img {
                 height:60px!important;
+                width: 80%!important;
             }
             
         }

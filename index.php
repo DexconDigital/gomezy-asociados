@@ -256,7 +256,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <img src="images/unifianza.png" alt="">
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
+                    <div class="fgi d-flex align-items-center justify-content-center col-12 col-sm-6 col-md-4 col-lg-4 col-lg-4">
                         <img src="images/fgi.png" alt="">
                     </div>
 
@@ -292,6 +292,36 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
 
     <?php include 'layout/archivosfooter.php'; ?>
     <script src="js/menu.js"></script>
+    
+    <!-- Modal -->
+<div class="modal fade" id="modal_emergente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Estimado cliente ahora los servicios de arrendatarios, propietarios y Pse los podrá encontrar en la sección MI CUENTA. Lo invitamos a disfrutar de nuestra nueva experiencia digital.
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn color_boton" data-dismiss="modal"> Cerrar </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+$(document).ready(function()
+   {
+      $("#modal_emergente").modal("show");
+   });
+
+</script>
 
 </body>
 

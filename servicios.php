@@ -24,14 +24,18 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <?php include 'layout/header2.php' ?>
     </header>
 
-    <section id="banner" class="position-relative">
-        <div class="align-items-center d-flex justify-content-center" style="color: white;">
-            <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
+     <section id="banner" class="position-relative">
+        <div class="position-relative align-items-center d-flex justify-content-center" style="color: white;">
+            
+            <div class="imagen_servicios imagen">
+                
+            </div>
+
+            <div class="fondo_negro h-100 w-100"></div>
+
+            <div class="d-flex justify-content-center align-items-center flex-column position-relative" style="height:200px" > 
                 <h1 class="font-weight-bold"> SERVICIOS </h1>
                 <h5 class="justify-content-center row"> Inicio / Servicios </h5>
-            </div>
-            <div>
-                <img src="images/banner_servicios.jpg" alt="">
             </div>
         </div>
     </section>

@@ -2,7 +2,7 @@
 
 function Conect()
 {
-    $echo = mysqli_connect("localhost","root","","dexcondigital_noticias_inmueble");
+    $echo = mysqli_connect("localhost","dexcondigital","dexcondigital@","dexcondigital_admin");
     return $echo;
 }
 

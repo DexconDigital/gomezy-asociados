@@ -24,14 +24,18 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         <?php include 'layout/header2.php' ?>
     </header>
 
-    <section id="banner" class="position-relative">
-        <div class="align-items-center d-flex justify-content-center" style="color: white;">
-            <div class="d-flex justify-content-center align-items-center flex-column position-absolute">
+  <section id="banner" class="position-relative">
+        <div class="position-relative align-items-center d-flex justify-content-center" style="color: white;">
+            
+            <div class="imagen_contactanos imagen">
+                
+            </div>
+
+            <div class="fondo_negro h-100 w-100"></div>
+
+            <div class="d-flex justify-content-center align-items-center flex-column position-relative" style="height:200px" > 
                 <h1 class="font-weight-bold"> CONTÁCTANOS </h1>
                 <h5 class="justify-content-center row"> Inicio / Contáctanos </h5>
-            </div>
-            <div>
-                <img src="images/banner_contacto.jpg" alt="">
             </div>
         </div>
     </section>
@@ -173,7 +177,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto: <?php echo $datos_contacto['correos']['servicios_publicos']['correo'] ?>">
                                     <img src="images/servicios_publicos.png" alt="" style="width: 50%; object-fit: contain;">
-                                    <p class="texto_contacto">Servicios Publicos</p>
+                                    <p class="texto_contacto">Servicios Públicos</p>
                                 </a>
                             </div>
                             <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
@@ -185,7 +189,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                             <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
                                 <a href="mailto:<?php echo $datos_contacto['correos']['proteccion_datos']['correo'] ?>">
                                     <img src="images/proteccion_datos.png" alt="" style="width: 50%; object-fit: contain;">
-                                    <p class="texto_contacto">Proteccion Datos</p>
+                                    <p class="texto_contacto">Protección Datos</p>
 
                                 </a>
                             </div>
