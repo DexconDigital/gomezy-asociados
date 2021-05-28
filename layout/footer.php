@@ -9,8 +9,8 @@
                 <h5> Formulario Aseguradoras </h5>
 
                 <ul>
-                    <li> <a href="Persona_Natural_Berkley.pdf" download="Persona_Natural_Berkley.pdf"> Persona Natural Berkley </a> </li>
-                    <li> <a href="Persona_Juridica_Berkley.pdf" download="Persona_Juridica_Berkley.pdf"> Persona Juridica Berkley </a> </li>
+                    <!--<li> <a href="Persona_Natural_Berkley.pdf" download="Persona_Natural_Berkley.pdf"> Persona Natural Berkley </a> </li>
+                    <li> <a href="Persona_Juridica_Berkley.pdf" download="Persona_Juridica_Berkley.pdf"> Persona Juridica Berkley </a> </li>-->
 
                     <li> <a href="Persona_natural_El_Libertador.pdf" download="Persona_natural_El_Libertador.pdf"> Persona natural El Libertador </a> </li>
                     <li> <a href="Persona_Juridica_El_Libertador.pdf" download="Persona_Juridica_El_Libertador.pdf"> Persona Juridica El Libertador </a> </li>
@@ -29,14 +29,11 @@
 
                 <div class="col-12 justify-content-center row m-0 p-0">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39979.23660973529!2d-75.62437479145247!3d6.205199000487165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468287e4cc73ed%3A0x2c1c27861dc9dbd0!2sEdificio%20Forum!5e0!3m2!1ses!2sco!4v1575502809226!5m2!1ses!2sco" class="p-0 col-12" width="100%" height="320px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    <a target="blank" href="https://www.google.com/maps/place/Edificio+Forum/@6.1976197,-75.5756868,17z/data=!3m1!4b1!4m5!3m4!1s0x8e468287e4cc73ed:0x2c1c27861dc9dbd0!8m2!3d6.1976144!4d-75.5734981" class="my-3 m-0 rounded btn color_boton_footer">Como llegar</a>
-
-
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.346576287024!2d-75.5727918!3d6.2179452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44283279bfffff%3A0xb3ed213756f05d51!2sEdificio%20C%C3%A1mara%20Colombiana%20de%20la%20Infraestructura%20P.H.!5e0!3m2!1ses-419!2sco!4v1622213015067!5m2!1ses-419!2sco" class="p-0 col-12" width="100%" height="320px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <a target="blank" href="https://goo.gl/maps/1byfu6UwB5HhWib96" class="my-3 m-0 rounded btn color_boton_footer">Como llegar</a>
                 </div>
 
             </div>
-
 
             <div class="col-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column align-items-md-center align-items-sm-left align-items-lg-left align-items-xl-left">
 

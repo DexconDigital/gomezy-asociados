@@ -272,9 +272,9 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                         <img src="images/gomez_y_loaiza.png" alt="">
                     </div>
 
-                    <div class="berkley d-flex align-items-center justify-content-center col-12">
+                    <!--<div class="berkley d-flex align-items-center justify-content-center col-12">
                         <img src="images/logo_berkley.png" alt="">
-                    </div>
+                    </div>-->
 
                 </div>
 
@@ -303,7 +303,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
         </button>
       </div>
       <div class="modal-body">
-      Estimado cliente ahora los servicios de arrendatarios, propietarios y Pse los podrá encontrar en la sección MI CUENTA. Lo invitamos a disfrutar de nuestra nueva experiencia digital.
+      Estimado cliente, a partir del mes de Abril nuestra organización brindará sus servicios en la  CR 43 B # 16-95 Oficina 314, edificio Cámara Colombiana de la Infraestructura PH, esta será nuestra única sede.
       </div>
       <div class="modal-footer">
 

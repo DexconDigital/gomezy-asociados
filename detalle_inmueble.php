@@ -187,15 +187,15 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                         <h6> Comparte en: </h6>
 
                                         <!-- WHATSAPP -->
-                                        <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20https://gomezyasociados.com.co/detalleInmueble.php?codigo%3d' . $co ?>">
+                                        <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20Descripción:%20' . $r['descrip'] . '%20https://gomezyasociados.com.co/detalle_inmueble.php?co%3d' . $co ?>">
                                             <div style="width:35px; height:35px;" class="align-items-center d-flex justify-content-center text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i> </div>
                                         </a>
                                         <!-- FACEBOOK -->
-                                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.gomezyasociados.com.co%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank">
+                                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://gomezyasociados.com.co/detalle_inmueble.php?co%3d<?php echo $co; ?>" target="_blank">
                                             <div style="width:35px; height:35px;" class="align-items-center d-flex justify-content-center text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['facebook']['icono'] ?>"></i> </div>
                                         </a>
                                         <!-- TWITTER -->
-                                        <a target="_blank" href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fhttps://gomezyasociados.com.co/detalleInmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank">
+                                        <a target="_blank" href="<?php echo 'https://twitter.com/intent/tweet?url=https://gomezyasociados.com.co/detalle_inmueble.php?co%3d' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank">
                                             <div style="width:35px; height:35px;" class="align-items-center d-flex justify-content-center text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['twitter']['icono'] ?>"></i> </div>
                                         </a>
                                     </div>

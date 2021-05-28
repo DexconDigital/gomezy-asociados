@@ -30,7 +30,7 @@ $redes_sociales = [
 		"imagen" => "images/twitter.png"
 	],
 	"instagram" => [
-		"link" => "https://www.instagram.com/inmobiliariagomezyasociados/ ",
+		"link" => "https://www.instagram.com/gomezyasociadossas/",
 		"icono" => "fab fa-instagram",
 		"imagen" => "images/instagram.png"
 	],
@@ -44,7 +44,7 @@ $redes_sociales = [
 //datos de contacto 
 $datos_contacto = [
 		"direccion" => [
-			"direccion" => "CL 7 Sur 42 70 Of 1603 TR 1 Edificio Fórum - Medellín – Antioquia",
+			"direccion" => "CR 43 B # 16-95 Oficina 314, edificio Cámara Colombiana de la Infraestructura PH - Medellín – Antioquia",
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
@@ -153,7 +153,7 @@ $texto_quienes_somos = [
 		"parrafos" => [
 			0 => "En <b>Inmobiliaria Gómez y Asociados </b> trabajamos desde hace 27 años con el propósito de satisfacer las expectativas inmobiliarias de nuestros clientes, a través de la innovación permanente en nuestro portafolio de productos y servicios, buscando generar felicidad en los hogares asesorándolos en la búsqueda del inmueble de sus sueños.",
 			1 => "En nuestra empresa tenemos un conocimiento profundo de todos los procesos inmobiliarios, integrándolos en razón del cliente, de ahí nuestro lema “Por el cliente nada es imposible”.",
-			2 => "Empresa certificada por Icontec bajo la norma de calidad ISO 9001:2015, y recientemente reconocida por la Cámara de Comercio de Medellín para Antioquia como empresa modelo en el sector inmobiliario “Historias con valor”.",
+			2 => "Empresa reconocida por la Cámara de Comercio de Medellín para Antioquia como empresa modelo en el sector inmobiliario “Historias con valor”.",
 		],	
 	],
 	"mision" => [
