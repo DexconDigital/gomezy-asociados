@@ -62,19 +62,19 @@
                         </a>
                     </div>
 
-                    <div class="ml-3 telefonos_header">
+                    <!--<div class="ml-3 telefonos_header">
                         <a href="tel: <?php echo $datos_contacto['celular']['link'] ?>">
                             <i class="<?php echo $datos_contacto['celular']['icono'] ?>"></i>
                             <h6 class="d-inline esconder_telefono"><?php echo $datos_contacto['celular']['imprimir'] ?> </h6>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="iconos_responsive ml-5 d-flex">
 
-                    <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
+                    <!--<a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
                         <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i> </div>
-                    </a>
+                    </a>-->
 
                     <a target="_blank" href="<?php echo $redes_sociales['facebook']['link'] ?>">
                         <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['facebook']['icono'] ?>"></i> </div>

@@ -60,7 +60,7 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                     <i class=" mr-2 mb-3 <?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>
                                 </a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a class="color_a_datos" href="tel:<?php echo $datos_contacto['celular']['link'] ?>">
                                     <i class=" mr-2 mb-3 <?php echo $datos_contacto['celular']['icono'] ?>"></i><?php echo $datos_contacto['celular']['imprimir'] ?>
                                 </a>
@@ -69,15 +69,15 @@ $nombre_inmobiliaria = 'Gómez Y Asociados' ?>
                                 <a class="color_a_datos" href="<?php echo $datos_contacto['whatsapp']['link'] ?>" target="blanck">
                                     <i class=" mr-2 mb-3 <?php echo $datos_contacto['whatsapp']['icono'] ?>"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                         <hr>
 
                         <div class="col-12 align-items-center justify-content-center d-flex">
 
-                            <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
+                            <!--<a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
                                 <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"></i> </div>
-                            </a>
+                            </a>-->
 
                             <a target="_blank" href="<?php echo $redes_sociales['facebook']['link'] ?>">
                                 <div style="width:35px; height:35px;" class="hover_iconos align-items-center d-flex justify-content-center mr-2 border border-light text-center rounded-pill"><i style="font-size:18px;" class="<?php echo $redes_sociales['facebook']['icono'] ?>"></i> </div>
