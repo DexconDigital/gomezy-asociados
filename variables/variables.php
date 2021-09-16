@@ -41,6 +41,12 @@ $redes_sociales = [
 	],
 ];
 
+$titulo_quienes_somos = [
+    "titulo"=> "quíenes somos"
+    ];
+
+
+
 //datos de contacto 
 $datos_contacto = [
 		"direccion" => [
@@ -48,8 +54,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0344485545",
-			"imprimir" => "+57 (4) 448 5545",
+			"link"=> "6044485545",
+			"imprimir" => "(604) 448 5545",
 			"icono" => "fas fa-phone-alt",
 		],
 		"celular" => [
